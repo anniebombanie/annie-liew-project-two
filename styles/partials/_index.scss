@@ -31,31 +31,32 @@ h1 {
 
 /* ----- ABOUT 2 ----- */
 
-.about--2 .container__img {
+.about .container__img {
   position: relative;
-  // overflow: hidden;
   &::before {
     display: block; // !!! pseudo element for img not defined in global!
     @include position(relative, null, null, null, null); // null = won't output in .css
     width: calc(100% - 20px);
+  }
+}
+
+.about--2 .container__img {
+  &::before {
     height: 200px;
   }
 }
 
-// .about--2 .container__img--1 {
-//   &::before {
-//     content: '';
-//     background: url(./../../assets/left-image.jpg) no-repeat center ;
-//     background-size: cover; // necessary to define this individually
-//     margin: 25px 20px 50px 0;
-//     box-shadow: 20px 20px $color-aqua;  
-//   }
-// }
+.about--2 .container__img--1 {
+  &::before {
+    @include bg-img('left-image.jpg');
+    margin: 25px 20px 50px 0;
+    box-shadow: 20px 20px $color-aqua;  
+  }
+}
 
 .about--2 .container__img--2 {
   &::before {
-    content: '';
-    @include bg-image('right-image.jpg');
+    @include bg-img('right-image.jpg');
     margin: 25px 0 50px 20px;
     box-shadow: -20px 20px $color-aqua;  
   }
@@ -63,22 +64,16 @@ h1 {
 
 /* ----- IMG BREAK ----- */
 .img-break {
-  margin: 0;
   @include bg-img('banner.jpg');
+  margin: 0;
   height: 40vh;
 }
 
 /* ----- ABOUT 4 ----- */
 .about--4 .container__img {
-  position: relative;
   &::before {
-    content: '';
-    display: block;
     @include bg-img('small-box.jpg');
-    @include position(relative, null, null, null, null);
-    width: calc(100% - 20px);
-    height: 200px;
-    width: 200px;
+    height: 100px;
     margin: 25px 0 50px 20px;
     box-shadow: -20px 20px $color-aqua;  
   }

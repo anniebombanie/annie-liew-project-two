@@ -2,7 +2,7 @@
 // VARIABLES
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Walter Turncoat', cursive;
-$color-turq: #03697c;
+$color-turq: red;// #03697c;
 $color-purple: #474bb5;
 $color-navy: #044779;
 $color-grey: #f3faff;
@@ -16,8 +16,8 @@ $assetpath: './../../../assets';
   align-items: center;
 }
 
-@mixin position ($type, $top, $right, $bottom, $left) {
-  position: $type;
+@mixin position ($pos, $top, $right, $bottom, $left) {
+  position: $pos;
   top: $top;
   right: $right;
   bottom: $bottom;
