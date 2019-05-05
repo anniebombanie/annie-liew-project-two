@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Fun Place - Blog</title>
+</head>
+<body>
+  <header>
+    <ul class="nav-top">
+      <li><a href="" id="home">home</a></li>
+      <li><a href="" id="about">about</a></li>
+      <li><a href="" id="blog" class="nav-a-active">blog</a></li>
+      <li><a href="" id="contact">contact</a></li>
+    </ul>
+    <h1>blog</h1>
+  </header>
+
+  <main>
+    <div>
+      <h2>new activities</h2>
+      <p>Monday January 30 by Saron</p>
+      <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amen rises. Nam tempus vel odio vitae aliquam.</p>
+      <p>In imperdiet eros id lacks vestibule vestibule. Suspendisse fermentum sem sagittis ante venenatis geestas quis vel justo. Maecenas semper suscitait nunc, sed aliquam sapin convolais eu. Nulla ut turpis in diam dapibus consequent. Fusce vehicle dolor arc, sit amet blanket dolor mollie nec. Donec viverra erleidend lacu.</p>
+      <p>Lorem ipsum dolor sit amen, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperiet neque. In volutpat ante semper diam molestie, et tliquam erat laoreet. Sed sit amen arc aliquot, molestie justo at, actor nuns. Phaselllus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam connecteur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi art susciput.</p>
+      <p>Present fraciliisis dolor sapier, vel sojales augue mollis ut. Mauris veneenatis magna eu torero poseur luctus. Aenean tincidunt turpis sed dus aliquam vehicle.</p>
+      <div>
+        <h2>comments:</h2>
+        <div class="comment-container">
+          <img src="./assets/comment-1.jpg" alt="profile pic of first commenter." class="user-profile-img">
+          <p class="comment-date">Tuesday October 9th, 2019 by Mariama</span></p>
+          <p>Fusce vehicle dolor arc, sit amen blanket dolor mollie nec. Donec viverra eleifend locus, vitae ullamcorper mets. Sed sollicitudin ipsum quis nunc sollicitude ultrices. Donec euismod scelerisque liqula. Maecenas eu varius risus…</p>
+        </div>
+        <div class="comment-container">
+          <img src="./assets/comment-2.jpg" alt="profile pic of second commenter." class="user-profile-img">
+          <p class="comment-date">Wednesday October 10th, 2019 by Rob</span></p>
+          <p>Donner viverra eleifend Lachs, vitae ullamcorper Mets. Sed sollicitudin ipsum quis nunc sollicitundin ultrices. Donec euismod
+          scelerisque ligua.</p>
+        </div>
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email address">
+          <input type="text" placeholder="Comment">
+          <button class="btn btn-form">post comment</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <aside>
+    <h3>our mission</h3>
+    <p>Nam dapibus nils vitae elit fringilla rutrum. Aenean sollicitudin, era a elemental.<a>Find out more.</a></p>
+    <h3>recent posts</h3>
+    <ul>
+      <li><a href="#">Donec facilisis tortor ut</a></li>
+      <li><a href="#">Augue lacuna at viverra</a></li>
+      <li><a href="#">Semper sed sapine mets</a></li>
+      <li><a href="#">Scelerisque nec pharetra id</a></li>
+    </ul>
+  </aside>
+
+  <footer>
+    <div class="wrapper">
+      <p>Copyright &copy; 2019 <a href="http://www.hackeryou.com" target="_blank">HackerYou</a></p>
+    </div> <!-- /.wrapper -->
+  </footer>
+
+</body>
+</html>
+
+(header+main>section*6)+footer
+
+(header>ul.top-nav>(li>a)*4)+(main>(div>h2{new activities}+div>(h2{comments:}+(.comment$)*2+form)))+aside+footer
+h2{Events}
