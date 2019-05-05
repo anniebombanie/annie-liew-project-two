@@ -327,7 +327,8 @@ nav .link__txt.link__txt--active::after {
 /* ========== INDEX ========== */
 /* ----- HEADER ----- */
 header {
-  background: url(./../../assets/home-header.jpg) no-repeat center;
+  content: '';
+  background: url(./../../../assets/home-header.jpg) no-repeat center;
   background-size: cover;
   height: 50vh;
 }
@@ -370,20 +371,23 @@ h1 {
 }
 
 /* ----- ABOUT 2 ----- */
-.about--2 .container__img {
+.about .container__img {
   position: relative;
 }
 
-.about--2 .container__img::before {
+.about .container__img::before {
   display: block;
   position: relative;
   width: calc(100% - 20px);
+}
+
+.about--2 .container__img::before {
   height: 200px;
 }
 
 .about--2 .container__img--1::before {
   content: '';
-  background: url(./../../assets/left-image.jpg) no-repeat center;
+  background: url(./../../../assets/left-image.jpg) no-repeat center;
   background-size: cover;
   margin: 25px 20px 50px 0;
   -webkit-box-shadow: 20px 20px #08fded;
@@ -392,7 +396,7 @@ h1 {
 
 .about--2 .container__img--2::before {
   content: '';
-  background: url(./../../assets/right-image.jpg) no-repeat center;
+  background: url(./../../../assets/right-image.jpg) no-repeat center;
   background-size: cover;
   margin: 25px 0 50px 20px;
   -webkit-box-shadow: -20px 20px #08fded;
@@ -401,24 +405,19 @@ h1 {
 
 /* ----- IMG BREAK ----- */
 .img-break {
-  margin: 0;
-  background: url(./../../assets/banner.jpg) center center no-repeat;
+  content: '';
+  background: url(./../../../assets/banner.jpg) no-repeat center;
   background-size: cover;
+  margin: 0;
   height: 40vh;
 }
 
 /* ----- ABOUT 4 ----- */
-.about--4 .container__img {
-  position: relative;
-}
-
 .about--4 .container__img::before {
   content: '';
-  background: url(./../../assets/small-box.jpg) center center no-repeat;
-  display: block;
-  position: relative;
-  width: calc(100% - 20px);
-  height: 300px;
+  background: url(./../../../assets/small-box.jpg) no-repeat center;
+  background-size: cover;
+  height: 100px;
   margin: 25px 0 50px 20px;
   -webkit-box-shadow: -20px 20px #08fded;
           box-shadow: -20px 20px #08fded;

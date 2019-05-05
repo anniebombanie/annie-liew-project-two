@@ -2,7 +2,7 @@
 // VARIABLES
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Walter Turncoat', cursive;
-$color-turq: red;// #03697c;
+$color-turq: #03697c;
 $color-purple: #474bb5;
 $color-navy: #044779;
 $color-grey: #f3faff;
@@ -26,6 +26,6 @@ $assetpath: './../../../assets';
 
 @mixin bg-img ($img-name) {
   content: '';
-  background: url(#{$assetpath}/$img-name) no-repeat center; // #{} interpolation for variable path
+  background: url(#{$assetpath}/#{$img-name}) no-repeat center; // #{} interpolation for variable path
   background-size: cover;
 }
