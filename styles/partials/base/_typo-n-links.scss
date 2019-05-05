@@ -1,7 +1,8 @@
+// TYPOGRAPHY 
 h1,
 h2,
 h3,
-.btn {
+.link__btn {
 	margin: 0;
 	font-family: $font-secondary;
 }
@@ -21,8 +22,9 @@ nav {
 	font-weight: 700;
 }
 
-.txt-link,
-.txt-link-active {
+// LINKS & BUTTONS
+.link__txt,
+.link__txt--active {
 	position: relative;
 	&::after {
 		content: '';
@@ -35,7 +37,7 @@ nav {
 	}
 }
 
-.txt-link {
+.link__txt {
 	&::after {
 		transform: scaleX(0);
 		opacity: 0;
@@ -47,18 +49,18 @@ nav {
 	}
 }
 
-nav .txt-link.txt-link-active {
+nav .link__txt.link__txt--active {
 	&::after {
 		opacity: 1;
 	}
 }
 
-.container-btn {
+.container__btn {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 }
 
-.btn {
+.link__btn {
 	color: $color-purple;
 	background-color: $color-aqua;
 	font-size: 1.25rem;
@@ -72,13 +74,13 @@ nav .txt-link.txt-link-active {
 	}
 }
 
-.bckgrnd-purple .btn {
+.bg--purple .link__btn {
 	&:hover {
 		background-color: $color-purple;
 	}
 }
 
-.bckgrnd-turq .btn {
+.bg--turq .link__btn {
 	&:hover {
 		background-color: $color-turq;
 	}

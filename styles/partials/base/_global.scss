@@ -1,4 +1,4 @@
-/* ========== GENERAL ========== */
+/* ========== GLOBAL ========== */
 
 html {
   font-size: 125%;
@@ -36,24 +36,25 @@ ul {
 	padding-right: 1rem;
 }
 
-/* ========== FOOTER ========== */
+/* ----- FOOTER ----- */
 
 footer {
 	padding: .01rem;
 	text-align: center;
+	// font-size: .5rem;
 }
 
-/* ========== HELPER CLASSES ========== */
+/* ----- HELPER CLASSES ----- */
 
-.bckgrnd-turq {
+.bg--turq {
 	background-color: $color-turq; 
 }
 
-.bckgrnd-purple {
+.bg--purple {
 	background-color: $color-purple; 
 }
 
-.bckgrnd-navy{
+.bg--navy{
 	background-color: $color-navy; 
 }
 
