@@ -10,88 +10,141 @@
     <link rel="stylesheet" href="./styles/style.css">
   <title>Fun Place - Home</title>
 </head>
+
 <body>
+  <!----- HEADER STARTS ----->
   <header>
-    <ul class="nav-top">
-      <li><a href="" id="home">home</a></li>
-      <li><a href="" id="about">about</a></li>
-      <li><a href="" id="blog">blog</a></li>
-      <li><a href="" id="contact">contact</a></li>
-    </ul>
-    <h1>fun place</h1>
+    <div class="wrapper">
+      <nav>
+        <label for="hamburger">
+        </label>
+        <input type="checkbox" id="hamburger" aria-hidden="true">
+        <ul class="nav-top">
+          <li><a href="" id="home" class="txt-link txt-link-active">home</a></li>
+          <li><a href="" id="about" class="txt-link">about</a></li>
+          <li><a href="" id="blog" class="txt-link">blog</a></li>
+          <li><a href="" id="contact" class="txt-link">contact</a></li>
+        </ul>
+      </nav>
+      <h1>FunPlace</h1>
+    </div>
   </header>
 
   <main>
-    <section>
-      <div class="wrapper color-one">
+    <!----- ABOUT 1 STARTS ----->
+    <section class="about-1 bckgrnd-turq">
+      <div class="wrapper">
         <ul class="new-space">
           <li>
-            <h2>new space</h2>
-          <i class="fas fa-home"></i>
+            <div class="container-icon-heading">
+              <div class="container-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <h2>New space</h2>
+            </div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure fugit nulla dolore praesentium, consequuntur accusamus est mollitia animi possimus error quibusdam non in voluptatum odio placeat, aut nam quas labore dicta, atque aperiam illo molestiae. Eos architecto repellat dolor possimus!</p>
-        </li>
-        <li class="community">
-          <i class="fas fa-users"></i>
-          <h2>community</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo optio, veniam nam doloremque neque quos a dicta numquam dolorum repellendus sunt corporis pariatur, ipsum, atque incidunt! Aliquid provident quisquam at.</p>
-        </li>
-        <li class="blog">
-          <i class="fas fa-file"></i>
-          <a href="./blog.html"><h2>blog</h2></a>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo optio, veniam nam doloremque neque quos a dicta numquam dolorum repellendus sunt corporis pariatur, ipsum, atque incidunt! Aliquid provident quisquam at.</p>
-        </li>
-        <li class="get-in-touch">
-          <i class="fas fa-phone"></i>
-          <a href="./get-in-touch.html"><h2>get in touch</h2></a>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo optio, veniam nam doloremque neque quos a dicta numquam dolorum repellendus sunt corporis pariatur, ipsum, atque incidunt! Aliquid provident quisquam at.</p>
-        </li>
+          </li>
+          <li class="community">
+            <div class="container-icon-heading">
+              <div class="container-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h2>Community</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo optio, veniam nam doloremque neque quos a dicta numquam dolorum repellendus sunt corporis pariatur, ipsum, atque incidunt! Aliquid provident quisquam at.</p>
+          </li>
+          <li class="blog">
+            <div class="container-icon-heading">
+              <div class="container-icon">
+                <i class="fas fa-file"></i>
+              </div>
+              <h2><a href="./blog.html" class="txt-link">blog</a></h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo optio, veniam nam doloremque neque quos a dicta numquam dolorum repellendus sunt corporis pariatur, ipsum, atque incidunt! Aliquid provident quisquam at.</p>
+          </li>
+          <li class="get-in-touch">
+            <div class="container-icon-heading">
+              <div class="container-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h2><a href="./contact.html" class="txt-link">Get in touch</a></h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo optio, veniam nam doloremque neque quos a dicta numquam dolorum repellendus sunt corporis pariatur, ipsum, atque incidunt! Aliquid provident quisquam at.</p>
+          </li>
         </ul>
       </div> <!-- /.wrapper -->
     </section>
 
-    <section>
-      <div class="wrapper color-two">
-        <div><h2>our programs</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quia dolores architecto, quidem possimus neque harum, quae non quisquam illo explicabo aspernatur dolore, culpa facilis ad ipsum nam molestias! Suscipit deleniti repudiandae esse atque, placeat totam, quibusdam rerum temporibus ab consequatur in doloribus corrupti adipisci quidem voluptatibus ullam vero ipsa sunt, odio deserunt maiores cupiditate unde. Sunt modi sint eveniet ullam quos alias minus nam mollitia voluptatum nemo dicta quasi ducimus commodi deserunt animi tempore cupiditate eligendi, accusamus dolorum molestiae!</p>
-        <a href="" class="btn">read more</a></div>
-        <div><h2>new locations</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quia dolores architecto, quidem possimus neque harum, quae non quisquam illo explicabo aspernatur dolore, culpa facilis ad ipsum nam molestias! Suscipit deleniti repudiandae esse atque, placeat totam, quibusdam rerum temporibus ab consequatur in doloribus corrupti adipisci quidem voluptatibus ullam vero ipsa sunt, odio deserunt maiores cupiditate unde. Sunt modi sint eveniet ullam quos alias minus nam mollitia voluptatum nemo dicta quasi ducimus commodi deserunt animi tempore cupiditate eligendi, accusamus dolorum molestiae!</p>
-        <a href="" class="btn">read more</a></div>
+    <!----- ABOUT 2 STARTS ----->
+    <section class="about-2 bckgrnd-purple">
+      <div class="container-img"></div>
+      <div class="wrapper container-txt">
+        <h2>Our programs</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quia dolores architecto, quidem possimus neque harum, quae non quisquam illo explicabo aspernatur dolore, culpa facilis ad ipsum nam molestias! Suscipit deleniti repudiandae esse atque, placeat totam, quibusdam rerum temporibus ab consequatur in doloribus corrupti adipisci quidem voluptatibus ullam vero ipsa sunt, odio deserunt maiores cupiditate unde. Sunt modi sint eveniet ullam quos alias minus nam mollitia voluptatum nemo dicta quasi ducimus commodi deserunt animi tempore cupiditate eligendi, accusamus dolorum molestiae!</p>  
+        <div class="container-btn">
+          <a href="" class="btn">read more</a>
+        </div>
+      </div> <!-- /.wrapper -->
+
+      <div class="container-img"></div>
+      <div class="wrapper container-txt">
+        <h2>New locations</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quia dolores architecto, quidem possimus neque harum, quae non quisquam illo explicabo aspernatur dolore, culpa facilis ad ipsum nam molestias! Suscipit deleniti repudiandae esse atque, placeat totam, quibusdam rerum temporibus ab consequatur in doloribus corrupti adipisci quidem voluptatibus ullam vero ipsa sunt, odio deserunt maiores cupiditate unde. Sunt modi sint eveniet ullam quos alias minus nam mollitia voluptatum nemo dicta quasi ducimus commodi deserunt animi tempore cupiditate eligendi, accusamus dolorum molestiae!</p>   
+        <div class="container-btn">
+          <a href="" class="btn">read more</a>
+        </div>
       </div> <!-- /.wrapper -->
     </section>
 
-    <section>
-      <div class="wrapper color-one">
-        <h2>road trips anymore?</h2>
+    <!----- ABOUT 3 STARTS ----->
+    <section class="about-3 bckgrnd-turq">
+      <div class="wrapper">
+        <h2>Road trips anyone?</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quia dolores architecto, quidem possimus neque harum, quae non quisquam illo explicabo aspernatur dolore, culpa facilis ad ipsum nam molestias! Suscipit deleniti repudiandae esse atque, placeat totam, quibusdam rerum temporibus ab consequatur in doloribus corrupti adipisci quidem voluptatibus ullam vero ipsa sunt, odio deserunt maiores cupiditate unde. Sunt modi sint eveniet ullam quos alias minus nam mollitia voluptatum nemo dicta quasi ducimus commodi deserunt animi tempore cupiditate eligendi, accusamus dolorum molestiae!</p>
-        <a href="" class="btn">find out more</a>
+        <div class="container-btn">
+          <a href="" class="btn">find out more</a>
+        </div>
       </div> <!-- /.wrapper -->
     </section>
 
-    <section>
-      <div class="img-break"></div>
+    <!----- IMG BREAK STARTS ----->
+    <section class="img-break">
     </section>
 
-    <section>
-      <div class="color-one">
-        <h2>events</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quia dolores architecto, quidem possimus neque harum, quae non quisquam illo explicabo aspernatur dolore, culpa facilis ad ipsum nam molestias! Suscipit deleniti repudiandae esse atque, placeat totam, quibusdam rerum temporibus ab consequatur in doloribus corrupti adipisci quidem voluptatibus ullam vero ipsa sunt, odio deserunt maiores cupiditate unde. Sunt modi sint eveniet ullam quos alias minus nam mollitia voluptatum nemo dicta quasi ducimus commodi deserunt animi tempore cupiditate eligendi, accusamus dolorum molestiae!</p>
-        <a href="" class="btn">find out more</a>
+    <!----- ABOUT 4 STARTS ----->
+    <section class="about-4 bckgrnd-turq">
+      <div class="wrapper">
+        <div class="container-img"></div>
+        <div class="container-txt">
+          <h2>Events</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quia dolores architecto, quidem possimus neque harum, quae non quisquam illo explicabo aspernatur dolore, culpa facilis ad ipsum nam molestias! Suscipit deleniti repudiandae esse atque, placeat totam, quibusdam rerum temporibus ab consequatur in doloribus corrupti adipisci quidem voluptatibus ullam vero ipsa sunt, odio deserunt maiores cupiditate unde. Sunt modi sint eveniet ullam quos alias minus nam mollitia voluptatum nemo dicta quasi ducimus commodi deserunt animi tempore cupiditate eligendi, accusamus dolorum molestiae!</p>
+          <div class="container-btn">
+            <a href="" class="btn">find out more</a>
+          </div>
+        </div>
       </div> <!-- /.wrapper -->
     </section>
 
-    <section>
-      <div class="color-two">
-        <img src="./assets/gallery-image-1.jpg" class="gallery-item gallery-item-1" alt="playground with a slide in front of building.">
-        <img src="./assets/gallery-image-2.jpg" class="gallery-item gallery-item-2" alt="young girl peeking over cubby house.">
-        <img src="./assets/gallery-image-3.jpg" class="gallery-item gallery-item-3" alt="kids playing tug-a-war.">
+    <!----- GALLERY STARTS ----->
+    <section class="gallery bckgrnd-purple">
+      <div class="wrapper">
+        <div class="gallery-item">
+          <img src="./assets/gallery-image-1.jpg" alt="playground with a slide in front of building.">
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/gallery-image-2.jpg" alt="young girl peeking over cubby house.">
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/gallery-image-3.jpg" alt="kids playing tug-a-war.">
+        </div>
       </div> <!-- /.wrapper -->
     </section>
-
   </main>
-  <footer>
+
+  <!----- FOOTER STARTS ----->
+  <footer class="bckgrnd-navy">
     <div class="wrapper">
-      <p>Copyright &copy; 2019 <a href="http://www.hackeryou.com" target="_blank">HackerYou</a></p>
+      <p>Copyright &copy; 2019 <a href="http://www.hackeryou.com" target="_blank" class="txt-link">HackerYou</a></p>
     </div> <!-- /.wrapper -->
   </footer>
   

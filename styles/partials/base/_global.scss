@@ -1,0 +1,60 @@
+/* ========== GENERAL ========== */
+
+html {
+  font-size: 125%;
+}
+
+body {
+  background: $color-turq;
+	color: $color-grey;
+	font-family: $font-primary;
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	line-height: 1.4rem; 
+}
+
+img {
+	display: block;
+	width: 100%;
+	min-width: 100%;
+}
+
+section {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	max-width: 1280px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/* ========== FOOTER ========== */
+
+footer {
+	padding: .01rem;
+	text-align: center;
+}
+
+/* ========== HELPER CLASSES ========== */
+
+.bckgrnd-turq {
+	background-color: $color-turq; 
+}
+
+.bckgrnd-purple {
+	background-color: $color-purple; 
+}
+
+.bckgrnd-navy{
+	background-color: $color-navy; 
+}
+
+

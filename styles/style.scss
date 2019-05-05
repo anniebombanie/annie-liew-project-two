@@ -1,2 +1,5 @@
-@import './base/normalise';
-@import './base/vars-mixins';
+@import './partials/base/normalise';
+@import './partials/base/vars-n-mixins';
+@import './partials/base/global';
+@import './partials/base/typo-n-links.scss';
+@import './partials/index';

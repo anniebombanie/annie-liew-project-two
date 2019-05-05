@@ -1,0 +1,74 @@
+
+/* ===== HEADER ===== */
+header {
+  background: url(./../../assets/home-header.jpg) center center no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+/* ===== ABOUT 1 ===== */
+.container-icon-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-icon {
+  color: $color-purple;
+  background-color: $color-aqua;
+  border-radius: 50%;
+  padding: .5rem;
+  margin-right: .8rem;
+  width: 54px;
+  height: 54px;
+  font-size: 1.4rem;
+  @include flex-center;
+}
+
+/* ===== ABOUT 2 ===== */
+.about-2 .container-img {
+  position: relative;
+  // overflow: hidden;
+  &::before {
+    content: '';
+    background: url(./../../assets/small-box.jpg) center center no-repeat;
+    display: block; // remember this! pseudo element for img not defined in global
+    @include position(relative, null, null, null, null); // null = won't output in .css
+    width: calc(100% - 20px);
+    height: 300px;
+    margin: 25px 0 50px 20px;
+    box-shadow: -20px 20px $color-aqua;  
+  }
+}
+
+/* ===== IMG BREAK ===== */
+.img-break {
+  margin: 0;
+  background: url(./../../assets/banner.jpg) center center no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+/* ===== ABOUT 4 ===== */
+.about-4 .container-img {
+  position: relative;
+  &::before {
+    content: '';
+    background: url(./../../assets/small-box.jpg) center center no-repeat;
+    display: block;
+    @include position(relative, null, null, null, null);
+    width: calc(100% - 20px);
+    height: 300px;
+    margin: 25px 0 50px 20px;
+    box-shadow: -20px 20px $color-aqua;  
+  }
+}
+
+/* ===== GALLERY ===== */
+.gallery-item {
+  margin: 1rem 0;
+}
