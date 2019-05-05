@@ -26,6 +26,6 @@ $assetpath: './../../../assets';
 
 @mixin bg-img ($img-name) {
   content: '';
-  background: url(#{$assetpath}/$img-name}) no-repeat center; // #{} interpolation forvariable path
+  background: url(#{$assetpath}/$img-name) no-repeat center; // #{} interpolation for variable path
   background-size: cover;
 }

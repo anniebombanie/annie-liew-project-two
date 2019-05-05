@@ -2,7 +2,7 @@
 
 /* ----- HEADER ----- */
 header {
-  @include bg-img(home-header.jpg);
+  @include bg-img('home-header.jpg'); // !!! MUST make this a string using '' due to .
   height: 50vh;
 }
 
@@ -55,7 +55,7 @@ h1 {
 .about--2 .container__img--2 {
   &::before {
     content: '';
-    @include bg-image(right-image.jpg);
+    @include bg-image('right-image.jpg');
     margin: 25px 0 50px 20px;
     box-shadow: -20px 20px $color-aqua;  
   }
@@ -64,7 +64,7 @@ h1 {
 /* ----- IMG BREAK ----- */
 .img-break {
   margin: 0;
-  @include bg-img(banner.jpg);
+  @include bg-img('banner.jpg');
   height: 40vh;
 }
 
@@ -74,7 +74,7 @@ h1 {
   &::before {
     content: '';
     display: block;
-    @include bg-img(small-box.jpg);
+    @include bg-img('small-box.jpg');
     @include position(relative, null, null, null, null);
     width: calc(100% - 20px);
     height: 200px;
