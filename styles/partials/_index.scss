@@ -1,17 +1,40 @@
-/* ========== INDEX ========== */
+/* ========== INDEX: MOB BASE ========== */
+.about .container__img {
+  position: relative;
+  &::before {
+    display: block; //! REMEMBER- pseudo element for img not defined in global
+    @include position(relative, null, null, null, null); // null = won't output in .css
+    width: calc(100% - 20px); // 10px for box-shadow
+  }
+}
 
 /* ----- HEADER ----- */
 header.home {
   @include bg-img('home-header.jpg'); //! MUST make this a string using '' due to .
-  height: 50vh;
-}
-
-h1 {
-  font-size: 3rem;
-  line-height: 2.8rem;
 }
 
 /* ----- ABOUT 1 ----- */
+.about--1 .container__img {
+  display: none;
+
+  @include media(640px) { // write media queries directly inside each element to deal with specificity issues 
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &::before {
+    @include bg-img('home-box-header.jpg');
+    @include position(relative, -40vh, null, null, null);
+    height: 300px;
+    width: 300px;
+    margin-bottom: -44%;
+  }
+}
+
+.about--1 li {
+  margin-bottom: 1.8rem;
+}
+
 .container__icon-heading {
   display: flex;
   justify-content: flex-start;
@@ -30,26 +53,23 @@ h1 {
   @include flex-center;
 }
 
-/* ----- ABOUT 2 ----- */
-.about .container__img {
-  position: relative;
-  &::before {
-    display: block; //! REMEMBER- pseudo element for img not defined in global
-    @include position(relative, null, null, null, null); // null = won't output in .css
-    width: calc(100% - 20px);
+@include media(400px) {
+   .about--1 li > p {
+    padding-left: 3.5rem;
+   }
   }
-}
 
+/* ----- ABOUT 2 ----- */
 .about--2 .container__img {
   &::before {
-    height: 200px;
+    height: 65vw; //Height scales according to width of device
   }
 }
 
 .about--2 .container__img--1 {
   &::before {
     @include bg-img('left-image.jpg');
-    margin: 25px 20px 50px 0;
+    margin: -70px 20px 50px 0;
     @include box-shadow(20px, 20px); //! MUST include , to seperate values
   }
 }
@@ -57,7 +77,7 @@ h1 {
 .about--2 .container__img--2 {
   &::before {
     @include bg-img('right-image.jpg');
-    margin: 25px 0 50px 20px;
+    margin: 55px 0 50px 20px;
     @include box-shadow(-20px, 20px);
   }
 }
@@ -66,14 +86,19 @@ h1 {
 .img-break {
   @include bg-img('banner.jpg');
   margin: 0;
-  height: 40vh;
+  height: 70vw;
+
+  @include media(640px) {
+    height: 50vw;
+  }
+
 }
 
 /* ----- ABOUT 4 ----- */
 .about--4 .container__img {
   &::before {
     @include bg-img('small-box.jpg');
-    height: 250px;
+    height: 75vw;
     margin: 25px 0 50px 20px;
     @include box-shadow(-20px, 20px);  
   }
