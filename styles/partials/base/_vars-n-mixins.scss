@@ -1,5 +1,4 @@
-
-// VARIABLES
+/* ========== VARIABLES ========== */
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Walter Turncoat', cursive;
 $color-turq: #03697c;
@@ -9,7 +8,7 @@ $color-grey: #f3faff;
 $color-aqua: #08fded;
 $assetpath: './../../../assets';
 
-// MIXINS
+/* ========== MIXINS ========== */
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -26,6 +25,17 @@ $assetpath: './../../../assets';
 
 @mixin bg-img ($img-name) {
   content: '';
-  background: url(#{$assetpath}/#{$img-name}) no-repeat center; // #{} interpolation for variable path
+  background: url(#{$assetpath}/#{$img-name}) no-repeat center; // #{} = interpolation for variable path
   background-size: cover;
+}
+
+@mixin box-shadow ($x, $y) {
+  box-shadow: $x $y $color-aqua;
+}
+
+//Adopted from https://thoughtbot.com/blog/sasss-content-directive
+@mixin media($screen-size) {
+  @media (min-width: $screen-size) {
+    @content;
+  }
 }

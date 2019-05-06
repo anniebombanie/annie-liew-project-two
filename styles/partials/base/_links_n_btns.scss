@@ -1,28 +1,10 @@
-// TYPOGRAPHY 
-h1,
-h2,
-h3,
-.link__btn {
-	margin: 0;
-	font-family: $font-secondary;
+/* ========== LINKS & BUTTONS ========== */
+nav .link__txt.link__txt--active {
+	&::after {
+		opacity: 1;
+	}
 }
 
-h2 {
-	font-size: 1.5rem;
-	line-height: 2.05rem;
-}
-
-a {
-	text-decoration: none;
-	color: inherit; //set to match color of parent container
-}
-
-nav {
-	text-transform: capitalize;
-	font-weight: 700;
-}
-
-// LINKS & BUTTONS
 .link__txt,
 .link__txt--active {
 	position: relative;
@@ -49,13 +31,7 @@ nav {
 	}
 }
 
-nav .link__txt.link__txt--active {
-	&::after {
-		opacity: 1;
-	}
-}
-
-.container__btn {
+.container__link {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 }
@@ -66,7 +42,7 @@ nav .link__txt.link__txt--active {
 	font-size: 1.25rem;
 	line-height: 2.05rem;
 	text-transform: capitalize;
-	padding: .5rem .7rem;
+	padding: .3rem .7rem;
 	border: 2px solid $color-aqua;
 	transition: background-color .2s, color .2s;
 	&:hover {
@@ -86,9 +62,6 @@ nav .link__txt.link__txt--active {
 	}
 }
 
-// h1 {font-size: 7.25rem;} FunPlace
-// h1 {font-size: 6.05rem;} Get in Touch
-// h2 {font-size: 2.25rem;} New Space
-// h1 {font-size: 2rem;} our programs
-// body {font-size: 1rem;}
-// nav {font-size: 1rem; font-weight: bold;}
+.form__btn {
+	width: 100%;
+}

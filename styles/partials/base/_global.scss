@@ -1,5 +1,6 @@
 /* ========== GLOBAL ========== */
 
+/* ----- GENERAL ----- */
 html {
   font-size: 125%;
 }
@@ -8,6 +9,7 @@ body {
   background: $color-turq;
 	color: $color-grey;
 	font-family: $font-primary;
+	font-size: .8rem;
 	font-weight: 400;
 	letter-spacing: 0.05rem;
 	line-height: 1.4rem; 
@@ -37,7 +39,6 @@ ul {
 }
 
 /* ----- FOOTER ----- */
-
 footer {
 	padding: .01rem;
 	text-align: center;
@@ -45,7 +46,6 @@ footer {
 }
 
 /* ----- HELPER CLASSES ----- */
-
 .bg--turq {
 	background-color: $color-turq; 
 }
@@ -57,5 +57,3 @@ footer {
 .bg--navy{
 	background-color: $color-navy; 
 }
-
-

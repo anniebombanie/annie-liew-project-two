@@ -180,7 +180,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+/* ========== VARIABLES ========== */
+/* ========== MIXINS ========== */
 /* ========== GLOBAL ========== */
+/* ----- GENERAL ----- */
 html {
   font-size: 125%;
 }
@@ -189,6 +192,7 @@ body {
   background: #03697c;
   color: #f3faff;
   font-family: "Roboto", sans-serif;
+  font-size: .8rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
   line-height: 1.4rem;
@@ -236,6 +240,7 @@ footer {
   background-color: #044779;
 }
 
+/* ========== BASE TYPOGRAPHY ========== */
 h1,
 h2,
 h3,
@@ -257,6 +262,11 @@ a {
 nav {
   text-transform: capitalize;
   font-weight: 700;
+}
+
+/* ========== LINKS & BUTTONS ========== */
+nav .link__txt.link__txt--active::after {
+  opacity: 1;
 }
 
 .link__txt,
@@ -291,11 +301,7 @@ nav {
           transform: scaleX(1);
 }
 
-nav .link__txt.link__txt--active::after {
-  opacity: 1;
-}
-
-.container__btn {
+.container__link {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -306,7 +312,7 @@ nav .link__txt.link__txt--active::after {
   font-size: 1.25rem;
   line-height: 2.05rem;
   text-transform: capitalize;
-  padding: .5rem .7rem;
+  padding: .3rem .7rem;
   border: 2px solid #08fded;
   -webkit-transition: background-color .2s, color .2s;
   transition: background-color .2s, color .2s;
@@ -324,6 +330,10 @@ nav .link__txt.link__txt--active::after {
   background-color: #03697c;
 }
 
+.form__btn {
+  width: 100%;
+}
+
 /* ========== INDEX ========== */
 /* ----- HEADER ----- */
 header {
@@ -335,6 +345,7 @@ header {
 
 h1 {
   font-size: 3rem;
+  line-height: 2.8rem;
 }
 
 /* ----- ABOUT 1 ----- */
@@ -417,7 +428,7 @@ h1 {
   content: '';
   background: url(./../../../assets/small-box.jpg) no-repeat center;
   background-size: cover;
-  height: 100px;
+  height: 250px;
   margin: 25px 0 50px 20px;
   -webkit-box-shadow: -20px 20px #08fded;
           box-shadow: -20px 20px #08fded;

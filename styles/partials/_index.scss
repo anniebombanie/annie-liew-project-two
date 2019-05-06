@@ -2,12 +2,13 @@
 
 /* ----- HEADER ----- */
 header {
-  @include bg-img('home-header.jpg'); // !!! MUST make this a string using '' due to .
+  @include bg-img('home-header.jpg'); //! MUST make this a string using '' due to .
   height: 50vh;
 }
 
 h1 {
   font-size: 3rem;
+  line-height: 2.8rem;
 }
 
 /* ----- ABOUT 1 ----- */
@@ -30,11 +31,10 @@ h1 {
 }
 
 /* ----- ABOUT 2 ----- */
-
 .about .container__img {
   position: relative;
   &::before {
-    display: block; // !!! pseudo element for img not defined in global!
+    display: block; //! REMEMBER- pseudo element for img not defined in global
     @include position(relative, null, null, null, null); // null = won't output in .css
     width: calc(100% - 20px);
   }
@@ -50,7 +50,7 @@ h1 {
   &::before {
     @include bg-img('left-image.jpg');
     margin: 25px 20px 50px 0;
-    box-shadow: 20px 20px $color-aqua;  
+    @include box-shadow(20px, 20px); //! MUST include , to seperate values
   }
 }
 
@@ -58,7 +58,7 @@ h1 {
   &::before {
     @include bg-img('right-image.jpg');
     margin: 25px 0 50px 20px;
-    box-shadow: -20px 20px $color-aqua;  
+    @include box-shadow(-20px, 20px);
   }
 }
 
@@ -73,9 +73,9 @@ h1 {
 .about--4 .container__img {
   &::before {
     @include bg-img('small-box.jpg');
-    height: 100px;
+    height: 250px;
     margin: 25px 0 50px 20px;
-    box-shadow: -20px 20px $color-aqua;  
+    @include box-shadow(-20px, 20px);  
   }
 }
 
