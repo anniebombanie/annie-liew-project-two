@@ -6,24 +6,36 @@ header.blog {
   height: 50vh;
 }
 
-/* ----- FORM ----- */
-.blog input,
-.blog textarea {
-  background-color: $color-turq;
+/* ----- ARTICLE ----- */
+.blog section:first-child {
+  border-bottom: solid 5px $color-aqua;
 }
 
-.blog .form__input-name,
-.blog .form__input-email {
-    border-bottom: solid 2px $color-aqua;
-  }
-
+/* ----- COMMENTS ----- */
 .blog .form__comment {
-    border: solid 2px $color-aqua;
-    height: 9rem;
-  }
+  border: solid 2px $color-aqua;
+  height: 9rem;
+}
+
+.container__comment {
+  margin-bottom: 3rem;
+}
+
+section .container__comment:last-of-type {
+  margin-bottom: 0;
+}
+
+.container__img-user-profile {
+  width: 90px;
+  height: auto;
+}
+
+.container__img-user-profile:first-child {
+  margin-top: 1rem;
+}
 
 /* ----- ASIDE ----- */
-.blog ul{
+aside.blog ul{
   margin-top: 1rem;
 }
 
@@ -32,5 +44,22 @@ aside.blog li {
     content: '\2022';
     color: $color-aqua;
     margin-right: .7rem;
+  }
+}
+
+aside.blog p {
+  margin-bottom: 2rem;
+}
+
+aside.blog .container__img {
+  position: relative;
+  &::before {
+    position: relative;
+    display: block;
+    height: 300px;
+    @include bg-img('blog-side-image.jpg');
+    margin: 25px 20px -50px 0;
+    transform: translateY(-85px);
+    // @include box-shadow(20px, 20px); 
   }
 }

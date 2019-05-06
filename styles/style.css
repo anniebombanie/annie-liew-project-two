@@ -381,11 +381,39 @@ nav .link__txt.link__txt--active::after {
   color: #08fded;
 }
 
+/* ========== NAV ========== */
+/* ========== FORMS ========== */
+textarea {
+  resize: vertical;
+  height: 9rem;
+}
+
+input,
+textarea {
+  background-color: inherit;
+}
+
+/* ----- CONTACT FORM ----- */
+.contact .form__input-name,
+.contact .form__input-email {
+  border-bottom: solid 2px #f3faff;
+}
+
+.contact .form__message {
+  border: solid 2px #f3faff;
+}
+
+/* ----- BLOG FORM ----- */
+.blog .form__input-name,
+.blog .form__input-email {
+  border-bottom: solid 2px #08fded;
+}
+
 /* ========== INDEX ========== */
 /* ----- HEADER ----- */
 header.home {
   content: '';
-  background: url(./../../../assets/home-header.jpg) no-repeat center;
+  background: url(./../assets/home-header.jpg) no-repeat center;
   background-size: cover;
   height: 50vh;
 }
@@ -445,7 +473,7 @@ h1 {
 
 .about--2 .container__img--1::before {
   content: '';
-  background: url(./../../../assets/left-image.jpg) no-repeat center;
+  background: url(./../assets/left-image.jpg) no-repeat center;
   background-size: cover;
   margin: 25px 20px 50px 0;
   -webkit-box-shadow: 20px 20px #08fded;
@@ -454,7 +482,7 @@ h1 {
 
 .about--2 .container__img--2::before {
   content: '';
-  background: url(./../../../assets/right-image.jpg) no-repeat center;
+  background: url(./../assets/right-image.jpg) no-repeat center;
   background-size: cover;
   margin: 25px 0 50px 20px;
   -webkit-box-shadow: -20px 20px #08fded;
@@ -464,7 +492,7 @@ h1 {
 /* ----- IMG BREAK ----- */
 .img-break {
   content: '';
-  background: url(./../../../assets/banner.jpg) no-repeat center;
+  background: url(./../assets/banner.jpg) no-repeat center;
   background-size: cover;
   margin: 0;
   height: 40vh;
@@ -473,7 +501,7 @@ h1 {
 /* ----- ABOUT 4 ----- */
 .about--4 .container__img::before {
   content: '';
-  background: url(./../../../assets/small-box.jpg) no-repeat center;
+  background: url(./../assets/small-box.jpg) no-repeat center;
   background-size: cover;
   height: 250px;
   margin: 25px 0 50px 20px;
@@ -490,29 +518,41 @@ h1 {
 /* ----- HEADER ----- */
 header.blog {
   content: '';
-  background: url(./../../../assets/blog-header.jpg) no-repeat center;
+  background: url(./../assets/blog-header.jpg) no-repeat center;
   background-size: cover;
   height: 50vh;
 }
 
-/* ----- FORM ----- */
-.blog input,
-.blog textarea {
-  background-color: #03697c;
+/* ----- ARTICLE ----- */
+.blog section:first-child {
+  border-bottom: solid 5px #08fded;
 }
 
-.blog .form__input-name,
-.blog .form__input-email {
-  border-bottom: solid 2px #08fded;
-}
-
+/* ----- COMMENTS ----- */
 .blog .form__comment {
   border: solid 2px #08fded;
   height: 9rem;
 }
 
+.container__comment {
+  margin-bottom: 3rem;
+}
+
+section .container__comment:last-of-type {
+  margin-bottom: 0;
+}
+
+.container__img-user-profile {
+  width: 90px;
+  height: auto;
+}
+
+.container__img-user-profile:first-child {
+  margin-top: 1rem;
+}
+
 /* ----- ASIDE ----- */
-.blog ul {
+aside.blog ul {
   margin-top: 1rem;
 }
 
@@ -522,38 +562,42 @@ aside.blog li::before {
   margin-right: .7rem;
 }
 
+aside.blog p {
+  margin-bottom: 2rem;
+}
+
+aside.blog .container__img {
+  position: relative;
+}
+
+aside.blog .container__img::before {
+  position: relative;
+  display: block;
+  height: 300px;
+  content: '';
+  background: url(./../assets/blog-side-image.jpg) no-repeat center;
+  background-size: cover;
+  margin: 25px 20px -50px 0;
+  -webkit-transform: translateY(-85px);
+          transform: translateY(-85px);
+}
+
 /* ========== CONTACT ========== */
 header.contact {
   content: '';
-  background: url(./../../../assets/contact-header.jpg) no-repeat center;
+  background: url(./../assets/contact-header.jpg) no-repeat center;
   background-size: cover;
 }
 
-/* ----- FORM ----- */
-.contact input,
-.contact textarea {
-  background-color: #474bb5;
-}
-
-.contact .form__input-name,
-.contact .form__input-email {
-  border-bottom: solid 2px #fff;
-}
-
-.contact .form__message {
-  border: solid 2px #fff;
-  height: 9rem;
-}
-
 /* ----- ASIDE ----- */
-.contact ul {
+aside.contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: .5rem;
 }
 
-.contact ul + p {
+aside.contact ul + p {
   margin-bottom: 1.2rem;
 }
 

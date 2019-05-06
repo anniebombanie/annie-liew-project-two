@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Walter+Turncoat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i|Walter+Turncoat" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
@@ -47,12 +47,16 @@
       <section>
         <h2>comments:</h2>
         <div class="container__comment">
-          <img src="./assets/comment-1.jpg" alt="profile pic of first commenter." class="comment__img-user-profile">
+          <div class="container__img-user-profile">
+            <img src="./assets/comment-1.jpg" alt="profile pic of first commenter.">
+          </div>
           <p class="comment__date">Tuesday October 9th, 2019 by Mariama</span></p>
           <p>Fusce vehicle dolor arc, sit amen blanket dolor mollie nec. Donec viverra eleifend locus, vitae ullamcorper mets. Sed sollicitudin ipsum quis nunc sollicitude ultrices. Donec euismod scelerisque liqula.</p>
         </div>
         <div class="container__comment">
-          <img src="./assets/comment-2.jpg" alt="profile pic of second commenter." class="comment__img-user-profile">
+          <div class="container__img-user-profile">
+            <img src="./assets/comment-2.jpg" alt="profile pic of second commenter.">
+          </div>
           <p class="comment__date">Wednesday October 10th, 2019 by Rob</span></p>
           <p>Donner viverra eleifend Lachs, vitae ullamcorper Mets. Sed sollicitudin ipsum quis nunc sollicitundin ultrices.
             Donec euismod
@@ -76,9 +80,11 @@
 
   <!----- ASIDE STARTS ----->
   <aside class="blog bg--purple">
+    <div class="container__img"></div>
     <div class="wrapper">
       <h3>Our Mission</h3>
-      <p>Nam dapibus nils vitae elit fringilla rutrum. Aenean sollicitudin, era a elemental. <a href="" class="link__txt">Find out more.</a></p>
+      <p>Nam dapibus nils vitae elit fringilla rutrum. Aenean sollicitudin, era a elemental.<br><a href="" class="link__txt">Find out more.</a></p>
+      <!-- br inserted to fix issue of :after hover not breaking onto new line. Safi said best way w/o using complex JS or spending too much time -->
       <h3>Recent Posts</h3>
       <ul class="">
         <li><a href="" class="link__txt">Donec facilisis tortor ut</a></li>

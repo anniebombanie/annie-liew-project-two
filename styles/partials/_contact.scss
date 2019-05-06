@@ -3,24 +3,8 @@ header.contact {
   @include bg-img('contact-header.jpg');
 }
 
-/* ----- FORM ----- */
-.contact input,
-.contact textarea {
-  background-color: $color-purple;
-}
-
-.contact .form__input-name,
-.contact .form__input-email {
-    border-bottom: solid 2px #fff;
-  }
-
-.contact .form__message {
-    border: solid 2px #fff;
-    height: 9rem;
-  }
-
 /* ----- ASIDE ----- */
-.contact ul {
+aside.contact ul {
   display: flex;
   margin-bottom: .5rem;
   + p {

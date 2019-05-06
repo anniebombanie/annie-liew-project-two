@@ -1,0 +1,26 @@
+/* ========== FORMS ========== */
+textarea {
+  resize: vertical;
+  height: 9rem;
+}
+
+input,
+textarea {
+  background-color: inherit;
+}
+
+/* ----- CONTACT FORM ----- */
+.contact .form__input-name,
+.contact .form__input-email {
+  border-bottom: solid 2px $color-grey;
+}
+
+.contact .form__message {
+  border: solid 2px $color-grey; 
+}
+
+  /* ----- BLOG FORM ----- */
+.blog .form__input-name,
+.blog .form__input-email {
+  border-bottom: solid 2px $color-aqua;
+}

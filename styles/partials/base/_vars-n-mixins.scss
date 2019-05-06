@@ -6,7 +6,7 @@ $color-purple: #474bb5;
 $color-navy: #044779;
 $color-grey: #f3faff;
 $color-aqua: #08fded;
-$assetpath: './../../../assets';
+$asset-path: './../assets';
 
 /* ========== MIXINS ========== */
 @mixin flex-center {
@@ -25,7 +25,7 @@ $assetpath: './../../../assets';
 
 @mixin bg-img ($img-name) {
   content: '';
-  background: url(#{$assetpath}/#{$img-name}) no-repeat center; // #{} = interpolation for variable path
+  background: url(#{$asset-path}/#{$img-name}) no-repeat center; // #{} = interpolation for variable path
   background-size: cover;
 }
 
