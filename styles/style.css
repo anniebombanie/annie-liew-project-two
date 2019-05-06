@@ -277,6 +277,11 @@ h2 {
   line-height: 2.05rem;
 }
 
+h3 {
+  font-size: 1.3rem;
+  line-height: 1rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -285,6 +290,11 @@ a {
 nav {
   text-transform: capitalize;
   font-weight: 700;
+}
+
+.comment__date {
+  font-weight: 700;
+  font-style: italic;
 }
 
 /* ========== LINKS & BUTTONS ========== */
@@ -373,7 +383,7 @@ nav .link__txt.link__txt--active::after {
 
 /* ========== INDEX ========== */
 /* ----- HEADER ----- */
-header {
+header.home {
   content: '';
   background: url(./../../../assets/home-header.jpg) no-repeat center;
   background-size: cover;
@@ -476,8 +486,44 @@ h1 {
   margin: 1rem 0;
 }
 
+/* ========== BLOG ========== */
+/* ----- HEADER ----- */
+header.blog {
+  content: '';
+  background: url(./../../../assets/blog-header.jpg) no-repeat center;
+  background-size: cover;
+  height: 50vh;
+}
+
+/* ----- FORM ----- */
+.blog input,
+.blog textarea {
+  background-color: #03697c;
+}
+
+.blog .form__input-name,
+.blog .form__input-email {
+  border-bottom: solid 2px #08fded;
+}
+
+.blog .form__comment {
+  border: solid 2px #08fded;
+  height: 9rem;
+}
+
+/* ----- ASIDE ----- */
+.blog ul {
+  margin-top: 1rem;
+}
+
+aside.blog li::before {
+  content: '\2022';
+  color: #08fded;
+  margin-right: .7rem;
+}
+
 /* ========== CONTACT ========== */
-header {
+header.contact {
   content: '';
   background: url(./../../../assets/contact-header.jpg) no-repeat center;
   background-size: cover;
@@ -489,12 +535,12 @@ header {
   background-color: #474bb5;
 }
 
-.form__input-name,
-.form__input-email {
+.contact .form__input-name,
+.contact .form__input-email {
   border-bottom: solid 2px #fff;
 }
 
-.form__message {
+.contact .form__message {
   border: solid 2px #fff;
   height: 9rem;
 }

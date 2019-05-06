@@ -1,5 +1,5 @@
 /* ========== CONTACT ========== */
-header {
+header.contact {
   @include bg-img('contact-header.jpg');
 }
 
@@ -9,12 +9,12 @@ header {
   background-color: $color-purple;
 }
 
-.form__input-name,
-.form__input-email {
+.contact .form__input-name,
+.contact .form__input-email {
     border-bottom: solid 2px #fff;
   }
 
-.form__message {
+.contact .form__message {
     border: solid 2px #fff;
     height: 9rem;
   }

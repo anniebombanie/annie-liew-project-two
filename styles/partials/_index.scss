@@ -1,7 +1,7 @@
 /* ========== INDEX ========== */
 
 /* ----- HEADER ----- */
-header {
+header.home {
   @include bg-img('home-header.jpg'); //! MUST make this a string using '' due to .
   height: 50vh;
 }

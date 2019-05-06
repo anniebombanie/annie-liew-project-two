@@ -1,0 +1,36 @@
+/* ========== BLOG ========== */
+
+/* ----- HEADER ----- */
+header.blog {
+  @include bg-img('blog-header.jpg');
+  height: 50vh;
+}
+
+/* ----- FORM ----- */
+.blog input,
+.blog textarea {
+  background-color: $color-turq;
+}
+
+.blog .form__input-name,
+.blog .form__input-email {
+    border-bottom: solid 2px $color-aqua;
+  }
+
+.blog .form__comment {
+    border: solid 2px $color-aqua;
+    height: 9rem;
+  }
+
+/* ----- ASIDE ----- */
+.blog ul{
+  margin-top: 1rem;
+}
+
+aside.blog li {
+  &::before {
+    content: '\2022';
+    color: $color-aqua;
+    margin-right: .7rem;
+  }
+}
