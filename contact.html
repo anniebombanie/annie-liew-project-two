@@ -31,41 +31,51 @@
     </div>
   </header>
 
-  <main>
-    <form action="">
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email address">
-      <input type="text" placeholder="Message">
-      <button class="link__btn form__btn">submit</button>
-    </form>
+  <!----- MAIN STARTS ----->
+  <main class="contact bg--purple">
+    <div class="wrapper">
+      <form action="#" method="POST">
+        <label for="form__input-name" class="visually-hidden">name</label>
+        <input type="text" id="form__input-name" class="form__input-name" name="name" placeholder="Name">
+
+        <label for="form__input-email" class="visually-hidden">email address</label>
+        <input type="email" id="form__input-email" class="form__input-email" name="email" placeholder="Email address">
+
+        <label for="form__message" class="visually-hidden">message</label>
+        <textarea id="form__message" class="form__message" name="message" placeholder="Message"></textarea>
+
+        <button class="link__btn form__btn">submit</button>
+      </form>
+    </div> <!-- /.wrapper -->
   </main>
 
-  <aside>
-    <div>
-      <ul class="container--social">
-        <li>
-          <a href="www.facebook.com" aria-label="Go to Fun Place's Facebook page."><i class="fab fa-facebook-f"
-              aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="www.instagram.com" aria-label="Go to Fun Place's Instagram page."><i class="fab fa-instagram"
-              aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="www.twitter.com" aria-label="Go to Fun Place's Twitter page."><i class="fab fa-twitter" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" aria-label="Send Fun Place a message on Whatsapp."><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-      <p><a href="mailto:info@email.com" class="link__txt">info@email.com</a></p>
-    </div>
-    <div>
-      <p>123-456-7890</p>
-      <p>123 Queen Street West, Unit 10</p>
-      <p>Toronto, Ontario</p>
-      <p>M5V2D5</p>
-    </div>
+  <!----- ASIDE STARTS ----->
+  <aside class="contact">
+    <div class="wrapper">
+      <div>
+        <ul>
+          <li>
+            <a href="www.facebook.com" aria-label="Go to Fun Place's Facebook page." class="link__icon"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="www.instagram.com" aria-label="Go to Fun Place's Instagram page." class="link__icon"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="www.twitter.com" aria-label="Go to Fun Place's Twitter page." class="link__icon"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="Send Fun Place a message on Whatsapp." class="link__icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <p><a href="mailto:info@email.com" class="link__txt">info@email.com</a></p>
+      </div>
+      <div>
+        <p><a href="tel:123-456-7890" class="link__txt">123-456-7890</a></p>
+        <p>123 Queen Street West, Unit 10</p>
+        <p>Toronto, Ontario</p>
+        <p>M5V2D5</p>
+      </div> 
+    </div> <!-- /.wrapper -->
   </aside>
 
   <!----- FOOTER STARTS ----->

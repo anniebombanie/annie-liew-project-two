@@ -166,7 +166,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-.visuallyHidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -190,12 +190,29 @@ html {
 
 body {
   background: #03697c;
+}
+
+body,
+input,
+textarea {
   color: #f3faff;
+  letter-spacing: 0.05rem;
   font-family: "Roboto", sans-serif;
+  line-height: 1.4rem;
   font-size: .8rem;
   font-weight: 400;
-  letter-spacing: 0.05rem;
-  line-height: 1.4rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .5rem .7rem;
+  border: none;
+}
+
+textarea {
+  margin-top: 1rem;
 }
 
 img {
@@ -204,7 +221,9 @@ img {
   min-width: 100%;
 }
 
-section {
+form,
+section,
+aside {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -223,8 +242,12 @@ ul {
 
 /* ----- FOOTER ----- */
 footer {
-  padding: .01rem;
+  padding: .4rem 0;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
 
 /* ----- HELPER CLASSES ----- */
@@ -265,6 +288,12 @@ nav {
 }
 
 /* ========== LINKS & BUTTONS ========== */
+.container__link {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ----- TEXT LINKS ----- */
 nav .link__txt.link__txt--active::after {
   opacity: 1;
 }
@@ -301,11 +330,7 @@ nav .link__txt.link__txt--active::after {
           transform: scaleX(1);
 }
 
-.container__link {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
+/* ----- "BUTTON" LINKS ----- */
 .link__btn {
   color: #474bb5;
   background-color: #08fded;
@@ -332,6 +357,18 @@ nav .link__txt.link__txt--active::after {
 
 .form__btn {
   width: 100%;
+}
+
+/* ----- SOCIAL ICON LINKS ----- */
+.link__icon {
+  font-size: 1rem;
+  margin-right: 1rem;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+.link__icon:hover {
+  color: #08fded;
 }
 
 /* ========== INDEX ========== */
@@ -437,5 +474,44 @@ h1 {
 /* ----- GALLERY ----- */
 .gallery__item {
   margin: 1rem 0;
+}
+
+/* ========== CONTACT ========== */
+header {
+  content: '';
+  background: url(./../../../assets/contact-header.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* ----- FORM ----- */
+.contact input,
+.contact textarea {
+  background-color: #474bb5;
+}
+
+.form__input-name,
+.form__input-email {
+  border-bottom: solid 2px #fff;
+}
+
+.form__message {
+  border: solid 2px #fff;
+  height: 9rem;
+}
+
+/* ----- ASIDE ----- */
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.contact ul + p {
+  margin-bottom: 1.2rem;
+}
+
+.contact p {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

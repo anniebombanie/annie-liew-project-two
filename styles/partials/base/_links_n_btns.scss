@@ -1,4 +1,10 @@
 /* ========== LINKS & BUTTONS ========== */
+.container__link {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+/* ----- TEXT LINKS ----- */
 nav .link__txt.link__txt--active {
 	&::after {
 		opacity: 1;
@@ -31,11 +37,7 @@ nav .link__txt.link__txt--active {
 	}
 }
 
-.container__link {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-}
-
+/* ----- "BUTTON" LINKS ----- */
 .link__btn {
 	color: $color-purple;
 	background-color: $color-aqua;
@@ -64,4 +66,15 @@ nav .link__txt.link__txt--active {
 
 .form__btn {
 	width: 100%;
+}
+
+/* ----- SOCIAL ICON LINKS ----- */
+
+.link__icon {
+	font-size: 1rem;
+	margin-right: 1rem;
+	transition: color .2s;
+	&:hover {
+		color: $color-aqua;
+	}
 }
