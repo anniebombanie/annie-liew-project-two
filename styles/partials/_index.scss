@@ -81,31 +81,26 @@
 
 /* ----- ABOUT 2 ----- */
 .about--2 {
-  .container__img-txt:first-child {
-  margin-bottom: 3rem;}
-  .container__img {
-    &::before {
-      height: 65vw; //Height scales according to width - kudos to https://jonathanwong.dev
+  .container__img-txt {
+    position: relative;
+    margin-bottom: 3rem;
 
-      @include media(550px) {
-        height: 50vw;
+    .container__txt {
+      &::before {
+        content: '';
+        display: block;
+        height: 65vw; //Height scales according to width - kudos to https://jonathanwong.dev
       }
     }
   }
-
-  .container__img--1 {
+  .container__txt--1 {
     &::before {
       @include bg-img('left-image.jpg');
       margin: rem-calc(-70px 20px 60px 0);
       @include box-shadow(1rem, 1rem); //! MUST include , to seperate values
-
-      @include media(800px) {
-      margin: rem-calc(-110px 20px 60px 0); 
-      }
     }
   }
-
-  .container__img--2 {
+  .container__txt--2 {
     &::before {
       @include bg-img('right-image.jpg');
       margin: rem-calc(0 0 60px 20px);
@@ -118,6 +113,7 @@
   .about--2 {
     .container__img-txt {
       display: flex;
+      position: relative;
       .container__img,
       .container__txt {
         flex-basis: 50%;
@@ -125,6 +121,8 @@
       .container__img {
         &::before {
           height: 35vw;
+          position: absolute;
+          left: 0;
         }
       }
       .container__img--1 {
