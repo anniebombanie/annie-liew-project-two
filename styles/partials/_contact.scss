@@ -1,6 +1,10 @@
 /* ========== CONTACT ========== */
 .container__main-aside .wrapper {
   padding: 0;
+
+  @include media(900px) {
+    padding: 0 2rem;
+  }
 }
 
 // ----- ASIDE -----
