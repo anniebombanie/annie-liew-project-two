@@ -38,19 +38,47 @@ textarea {
       margin-left: 0;
     }
   }
+
+  @include media(1220px) {
+    display: flex;
+    input {
+      width: 50%;
+      // margin: 0 .5rem;
+    }
+    input.form__input-name {
+      margin-right: .7rem;
+    }
+    input.form__input-email {
+      margin-left: .7rem;
+    }
+  }
+
 }
 
 // ----- CONTACT FORM -----
-main.contact{
+main.contact {
   @include box-shadow (1rem, 1rem);
-  
+
   @include media(900px) {
     display: flex;
+    position: relative;
+    bottom: rem-calc(150px);
+    margin-bottom: -2rem;
+  }
+
+  @include media(1100px) {
+    margin-right: 1rem;
   }
 }
 
-.contact form{
-  padding: 3rem 0;
+.contact form {
+  padding: 3rem 2rem;
+
+  @include media(1100px) {
+    padding: 3rem 3.5rem;
+    margin-left: -1.5rem;
+    margin-top: -1rem;
+  }
 }
 
 .contact input {

@@ -1,27 +1,37 @@
 /* ========== CONTACT ========== */
+.container__main-aside .wrapper {
+  padding: 0;
+}
+
 // ----- ASIDE -----
 aside.contact {
   padding: 4rem 0 3rem;
   text-align: center;
 
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5rem;
+    + p {
+      margin-bottom: rem-calc(25px);
+    }
+
+    @include media(900px) {
+      justify-content: flex-start;
+      a.link__icon:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+
   @include media(900px) {
     order: -10;
     text-align: left;
   }
-}
 
-aside.contact ul {
-  display: flex;
-  justify-content: center;
-  margin-bottom: .5rem;
-  + p {
-    margin-bottom: rem-calc(25px);
-  }
-
-  @include media(900px) {
-    justify-content: flex-start;
-    a.link__icon:first-child {
-      padding-left: 0;
+  .container__txt {
+    @include media(900px) {
+      max-width: rem-calc(240px);
     }
   }
 }
@@ -33,5 +43,6 @@ aside.contact ul {
 .container__main-aside {
   @include media(900px) {
     display: flex;
+    justify-content: space-between;
   }
 }
