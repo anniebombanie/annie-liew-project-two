@@ -955,7 +955,7 @@ main.contact {
   margin-bottom: 3rem;
 }
 
-section .container__comment:last-of-type {
+.container__comment:last-of-type {
   margin-bottom: 0;
 }
 

@@ -12,19 +12,17 @@
 
 .container__comment {
   margin-bottom: 3rem;
-}
-
-section .container__comment:last-of-type {
-  margin-bottom: 0;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .container__img-user-profile {
   width: rem-calc(90px);
   height: auto;
-}
-
-.container__img-user-profile:first-child {
-  margin-top: 1rem;
+  &:first-child {
+    margin-top: 1rem;
+  }
 }
 
 // ----- ASIDE -----
