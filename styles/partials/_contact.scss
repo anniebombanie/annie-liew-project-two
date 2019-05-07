@@ -1,8 +1,13 @@
 /* ========== CONTACT ========== */
-/* ----- ASIDE ----- */
+// ----- ASIDE -----
 aside.contact {
-  padding-top: 4rem;
+  padding: 4rem 0 3rem;
   text-align: center;
+
+  @include media(900px) {
+    order: -10;
+    text-align: left;
+  }
 }
 
 aside.contact ul {
@@ -12,8 +17,21 @@ aside.contact ul {
   + p {
     margin-bottom: rem-calc(25px);
   }
+
+  @include media(900px) {
+    justify-content: flex-start;
+    a.link__icon:first-child {
+      padding-left: 0;
+    }
+  }
 }
 
 .contact p {
   margin: 0;
+}
+
+.container__main-aside {
+  @include media(900px) {
+    display: flex;
+  }
 }

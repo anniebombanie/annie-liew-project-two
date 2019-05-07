@@ -1,10 +1,10 @@
 /* ========== BLOG ========== */
-/* ----- ARTICLE ----- */
+// ----- ARTICLE -----
 .blog section:first-child {
   border-bottom: solid rem-calc(5px) $color-aqua;
 }
 
-/* ----- COMMENTS ----- */
+// ----- COMMENTS -----
 .blog .form__comment {
   border: solid rem-calc(2px) $color-aqua;
   height: 9rem;
@@ -27,7 +27,7 @@ section .container__comment:last-of-type {
   margin-top: 1rem;
 }
 
-/* ----- ASIDE ----- */
+// ----- ASIDE -----
 aside.blog ul{
   margin-top: 1rem;
 }

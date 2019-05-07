@@ -1,6 +1,6 @@
 /* ========== GLOBAL ========== */
 
-/* ----- GENERAL ----- */
+// ----- GENERAL -----
 html {
 	font-size: 125%;
 }
@@ -80,7 +80,7 @@ ul {
 	}
 }
 
-/* ----- FOOTER ----- */
+// ----- FOOTER -----
 footer {
 	padding: .4rem 0;
 	text-align: center;
@@ -89,7 +89,7 @@ footer {
 	}
 }
 
-/* ----- HELPER CLASSES ----- */
+// ----- HELPER CLASSES -----
 .bg--turq {
 	background-color: $color-turq; 
 }

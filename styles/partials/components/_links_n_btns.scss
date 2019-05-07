@@ -1,10 +1,11 @@
 /* ========== LINKS & BUTTONS ========== */
+
 .container__link {
 	margin-top: 2.2rem;
 	margin-bottom: 1.5rem;
 }
 
-/* ----- TEXT LINKS ----- */
+// ----- TEXT LINKS -----
 .link__txt,
 .link__txt--active {
 	position: relative;
@@ -31,7 +32,7 @@
 	}
 }
 
-/* ----- "BUTTON" LINKS ----- */
+// ----- "BUTTON" LINKS -----
 .link__btn {
 	color: $color-purple;
 	background-color: $color-aqua;
@@ -61,7 +62,7 @@
 	width: 100%;
 }
 
-/* ----- SOCIAL ICON LINKS ----- */
+// ----- SOCIAL ICON LINKS -----
 .link__icon {
 	font-size: rem-calc(22px);
 	padding: 0 .6rem;
