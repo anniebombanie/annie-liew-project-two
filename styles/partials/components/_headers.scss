@@ -3,13 +3,17 @@ header.home,
 header.blog,
 header.contact {
   height: 60vh;
+  
+  @include media(800px) {
+    height: 75vh;
+	}
 }
 
 header.home {
   @include bg-img('home-header.jpg'); //! MUST make this a string using '' due to .
 
 	@include media(800px) {
-    height: 80vh;
+    height: 90vh;
 	}
 }
 

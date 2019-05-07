@@ -10,18 +10,26 @@ textarea {
 }
 
 .container__form-input {
-    input {
-      width: 50%;
-    }
+  input {
+    width: 50%;
   }
+}
 
 /* ----- CONTACT FORM ----- */
+main.contact{
+  @include box-shadow (0, 1rem);
+}
+
+.contact form{
+  padding: 2rem 0;
+}
+
 .contact input {
-  border-bottom: solid 2px $color-grey;
+  border-bottom: solid rem-calc(2px) $color-grey;
 }
 
 .contact textarea {
-  border: solid 2px $color-grey; 
+  border: solid rem-calc(2px) $color-grey; 
 }
 
   /* ----- BLOG FORM ----- */

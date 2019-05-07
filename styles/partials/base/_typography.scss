@@ -23,12 +23,31 @@ h3,
 	@include media(900px) {
 		font-size: rem-calc(88px);
 	}
+
+	@include media(1024px) {
+     font-size: rem-calc(100px);   
+  }
 }
 
 .contact h1,
 .blog h1 {
 	font-size: rem-calc(52px); //sub-pages have smaller sized headings
-	line-height: rem-calc(60px);	
+	line-height: rem-calc(60px);
+	transform: translateY(rem-calc(60px));
+	
+	@include media(500px) {
+		font-size: rem-calc(70px);
+	}
+
+	@include media(700px) {
+		font-size: rem-calc(100px);
+		transform: translateY(rem-calc(70px));
+	}
+
+	@include media(1024px) {
+		font-size: rem-calc(121px);
+		transform: translateY(rem-calc(90px));
+	}
 }
 
 h2 {
@@ -58,9 +77,6 @@ a {
 	font-weight: 700;
 	font-style: italic; //change to goodfonts i
 }
-
-// h1 {font-size: 7.25rem;} FunPlace
-// h1 {font-size: 6.05rem;} Get in Touch
 // h2 {font-size: 2.25rem;} New Space
 // h1 {font-size: 2rem;} our programs
 // body {font-size: 1rem;}

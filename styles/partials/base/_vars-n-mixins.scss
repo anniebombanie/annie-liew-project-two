@@ -30,7 +30,7 @@ $asset-path: './../assets';
 }
 
 @mixin box-shadow ($x, $y) {
-  box-shadow: $x $y $color-aqua;
+  box-shadow: $x $y 0 $color-aqua;
 }
 
 //Adopted from https://thoughtbot.com/blog/sasss-content-directive
