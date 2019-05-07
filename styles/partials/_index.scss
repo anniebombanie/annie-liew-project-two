@@ -78,33 +78,35 @@
   }
 
 /* ----- ABOUT 2 ----- */
-.about--2 .container__img {
-  &::before {
-    height: 65vw; //Height scales according to width - kudos to https://jonathanwong.dev
+.about--2 {
+  .container__img {
+    &::before {
+      height: 65vw; //Height scales according to width - kudos to https://jonathanwong.dev
 
-    @include media(550px) {
-      height: 50vw;
+      @include media(550px) {
+        height: 50vw;
+      }
     }
   }
-}
 
-.about--2 .container__img--1 {
-  &::before {
-    @include bg-img('left-image.jpg');
-    margin: rem-calc(-70px 20px 60px 0);
-    @include box-shadow(1rem, 1rem); //! MUST include , to seperate values
+  .container__img--1 {
+    &::before {
+      @include bg-img('left-image.jpg');
+      margin: rem-calc(-70px 20px 60px 0);
+      @include box-shadow(1rem, 1rem); //! MUST include , to seperate values
 
-    @include media(800px) {
-     margin: rem-calc(-110px 20px 60px 0); 
+      @include media(800px) {
+      margin: rem-calc(-110px 20px 60px 0); 
+      }
     }
   }
-}
 
-.about--2 .container__img--2 {
-  &::before {
-    @include bg-img('right-image.jpg');
-    margin: rem-calc(55px 0 60px 20px);
-    @include box-shadow(-1rem, 1rem);
+  .container__img--2 {
+    &::before {
+      @include bg-img('right-image.jpg');
+      margin: rem-calc(55px 0 60px 20px);
+      @include box-shadow(-1rem, 1rem);
+    }
   }
 }
 
@@ -124,7 +126,7 @@
       .container__img-txt:first-child {
         margin-bottom: 4rem;
       }
-      .container__img-txt:first-child {
+      .container__img-txt:last-child {
         margin-bottom: -4rem;
       }
       .container__img--1 {
@@ -166,8 +168,8 @@
 }
 
 /* ----- ABOUT 4 ----- */
-.about--4 .container__img {
-  &::before {
+.about--4 {
+  .container__img::before {
     @include bg-img('small-box.jpg');
     height: 75vw;
     margin: rem-calc(25px 0 50px 20px);
@@ -186,17 +188,17 @@
       margin: rem-calc(5px 0 20px);
     }
   }
-}
 
-.about--4 .wrapper {
-  @include media(900px) {
-    display: flex;
-    .container__img {
-      flex-basis: 33%;
-    }
-    .container__txt {
-      flex-basis: 67%;
-      padding-left: .5rem;
+  .wrapper {
+    @include media(900px) {
+      display: flex;
+      .container__img {
+        flex-basis: 33%;
+      }
+      .container__txt {
+        flex-basis: 67%;
+        padding-left: .5rem;
+      }
     }
   }
 }

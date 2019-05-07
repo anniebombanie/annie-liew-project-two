@@ -1,26 +1,33 @@
 /* ========== FORMS ========== */
-textarea {
-  resize: vertical;
-  height: 9rem;
-}
-
 input,
 textarea {
   background-color: inherit;
 }
 
+textarea {
+  resize: vertical;
+  height: 9rem;
+}
+
+@include media(800px) {
+  .container__form-input {
+    display: flex;
+    input {
+      flex-basis: 50%;
+    }
+  }
+}
+
 /* ----- CONTACT FORM ----- */
-.contact .form__input-name,
-.contact .form__input-email {
+.contact input {
   border-bottom: solid 2px $color-grey;
 }
 
-.contact .form__message {
+.contact textarea {
   border: solid 2px $color-grey; 
 }
 
   /* ----- BLOG FORM ----- */
-.blog .form__input-name,
-.blog .form__input-email {
+.blog input {
   border-bottom: solid 2px $color-aqua;
 }

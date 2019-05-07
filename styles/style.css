@@ -538,29 +538,39 @@ header.contact {
 }
 
 /* ========== FORMS ========== */
-textarea {
-  resize: vertical;
-  height: 9rem;
-}
-
 input,
 textarea {
   background-color: inherit;
 }
 
+textarea {
+  resize: vertical;
+  height: 9rem;
+}
+
+@media (min-width: 800px) {
+  .container__form-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container__form-input input {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
 /* ----- CONTACT FORM ----- */
-.contact .form__input-name,
-.contact .form__input-email {
+.contact input {
   border-bottom: solid 2px #f3faff;
 }
 
-.contact .form__message {
+.contact textarea {
   border: solid 2px #f3faff;
 }
 
 /* ----- BLOG FORM ----- */
-.blog .form__input-name,
-.blog .form__input-email {
+.blog input {
   border-bottom: solid 2px #08fded;
 }
 
@@ -728,7 +738,7 @@ textarea {
   .about--2 .container__img-txt .container__img-txt:first-child {
     margin-bottom: 4rem;
   }
-  .about--2 .container__img-txt .container__img-txt:first-child {
+  .about--2 .container__img-txt .container__img-txt:last-child {
     margin-bottom: -4rem;
   }
   .about--2 .container__img-txt .container__img--1 {
