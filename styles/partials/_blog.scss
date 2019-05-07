@@ -8,12 +8,12 @@ header.blog {
 
 /* ----- ARTICLE ----- */
 .blog section:first-child {
-  border-bottom: solid 5px $color-aqua;
+  border-bottom: solid rem-calc(5px) $color-aqua;
 }
 
 /* ----- COMMENTS ----- */
 .blog .form__comment {
-  border: solid 2px $color-aqua;
+  border: solid rem-calc(2px) $color-aqua;
   height: 9rem;
 }
 
@@ -26,7 +26,7 @@ section .container__comment:last-of-type {
 }
 
 .container__img-user-profile {
-  width: 90px;
+  width: rem-calc(90px);
   height: auto;
 }
 
@@ -43,7 +43,7 @@ aside.blog li {
   &::before {
     content: '\2022';
     color: $color-aqua;
-    margin-right: .7rem;
+    margin-right: rem-calc(16px);
   }
 }
 
@@ -56,10 +56,9 @@ aside.blog .container__img {
   &::before {
     position: relative;
     display: block;
-    height: 300px;
+    height: rem-calc(300px);
     @include bg-img('blog-side-image.jpg');
-    margin: 25px 20px -50px 0;
-    transform: translateY(-85px);
-    // @include box-shadow(20px, 20px); 
+    margin: rem-calc(25px 20px -50px 0);
+    transform: translateY(rem-calc(-85px));
   }
 }

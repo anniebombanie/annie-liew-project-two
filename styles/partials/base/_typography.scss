@@ -8,30 +8,41 @@ h3,
 }
 
 h1 {
-  font-size: 3rem;
-  line-height: 2.8rem;
+	line-height: rem-calc(60px);
   position: relative;
-  top: 3rem;
+  top: rem-calc(100px);
+}
+
+.home h1 {
+	font-size: rem-calc(59px);
+	
+	@include media(750px) {
+		font-size: rem-calc(75px);
+	}
+}
+
+.contact h1,
+.blog h1 {
+	font-size: rem-calc(52px); //sub-pages have smaller sized headings
 }
 
 h2 {
-	font-size: 1.5rem;
-	line-height: 2.05rem;
+	font-size: rem-calc(33px);
+	line-height: rem-calc(41px);
+
+	@include media(400px) {
+		font-size: rem-calc(40px);
+	}
 }
  
 h3 {
-	font-size: 1.3rem;
+	font-size: rem-calc(26px);
 	line-height: 1rem;
 }
 
 a {
 	text-decoration: none;
 	color: inherit; //set to match color of parent container
-}
-
-nav {
-	text-transform: capitalize;
-	font-weight: 700;
 }
 
 .comment__date {

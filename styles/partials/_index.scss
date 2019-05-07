@@ -1,4 +1,4 @@
-/* ========== INDEX: MOB BASE ========== */
+/* ========== INDEX ========== */
 .about .container__img {
   position: relative;
   &::before {
@@ -24,10 +24,10 @@ header.home {
 
   &::before {
     @include bg-img('home-box-header.jpg');
-    @include position(relative, -40vh, null, null, null);
-    height: 300px;
-    width: 300px;
-    margin-bottom: -44%;
+    @include position(relative, -45vh, null, null, null);
+    height: 40vw;
+    width: 45%;
+    margin-bottom: -38%;
   }
 }
 
@@ -47,8 +47,8 @@ header.home {
   border-radius: 50%;
   padding: .5rem;
   margin-right: .8rem;
-  width: 54px;
-  height: 54px;
+  width: rem-calc(54px);
+  height: rem-calc(54px);
   font-size: 1.4rem;
   @include flex-center;
 }
@@ -62,7 +62,7 @@ header.home {
 /* ----- ABOUT 2 ----- */
 .about--2 .container__img {
   &::before {
-    height: 65vw; //Height scales according to width of device
+    height: 65vw; //Height scales according to width - kudos to https://jonathanwong.dev
   }
 }
 
@@ -70,15 +70,22 @@ header.home {
   &::before {
     @include bg-img('left-image.jpg');
     margin: -70px 20px 50px 0;
-    @include box-shadow(20px, 20px); //! MUST include , to seperate values
+    @include box-shadow(1rem, 1rem); //! MUST include , to seperate values
   }
 }
 
 .about--2 .container__img--2 {
   &::before {
     @include bg-img('right-image.jpg');
-    margin: 55px 0 50px 20px;
-    @include box-shadow(-20px, 20px);
+    margin: rem-calc(55px 0 50px 20px);
+    @include box-shadow(-1rem, 1rem);
+  }
+}
+
+/* ----- ABOUT 3 ----- */
+.about--3 {
+  @include media(400px) {
+    text-align: center;
   }
 }
 
@@ -88,8 +95,12 @@ header.home {
   margin: 0;
   height: 70vw;
 
-  @include media(640px) {
-    height: 50vw;
+  @include media(400px) {
+    height: 60vw;
+  }
+
+  @include media(600px) {
+    height: 45vw;
   }
 
 }
@@ -99,12 +110,56 @@ header.home {
   &::before {
     @include bg-img('small-box.jpg');
     height: 75vw;
-    margin: 25px 0 50px 20px;
-    @include box-shadow(-20px, 20px);  
+    margin: rem-calc(25px 0 50px 20px);
+    @include box-shadow(-1rem, 1rem);
+
+    @include media(600px) {
+      width: calc(33% - 1rem);
+      height: 26vw;
+      float: left;
+      margin: rem-calc(5px 20px 20px);
+    }
   }
 }
 
+// .about--4 .wrapper {
+//   @include media(600px) {
+//     display: flex;
+//     align-items: flex-start;
+//     .container__img {
+//       min-width: 33%;
+//       flex-basis: 33%;
+//       &::before {
+//         height: rem-calc(150px);
+//       }
+//     }
+//     .container_txt {
+//       flex-basis: 67%;
+//       padding-left: 1rem;
+//     }
+//   }
+// }
+
 /* ----- GALLERY ----- */
-.gallery__item {
-  margin: 1rem 0;
+.container__gallery-item {
+  @include media(600px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
+
+.gallery-item {
+  margin: 1rem 0;
+
+  @include media(600px) {
+    width: calc(100% / 3);
+    margin: .5rem;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+

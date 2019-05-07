@@ -13,11 +13,16 @@ body,
 input,
 textarea {
 	color: $color-grey;
-	letter-spacing: 0.05rem;
+	letter-spacing: rem-calc(1px);
 	font-family: $font-primary;
-	line-height: 1.4rem;
-	font-size: .8rem;
+	font-size: rem-calc(18px);
+	line-height: rem-calc(27px);
 	font-weight: 400;
+
+	@include media(600px){
+		font-size: rem-calc(19px);
+		line-height: rem-calc(30px);
+	}
 }
 
 header {
@@ -28,7 +33,7 @@ input,
 textarea {
 	width: 100%;
 	margin-bottom: 1rem;
-	padding: .5rem .7rem;
+	padding: rem-calc(10px 18px);
 	border: none;
 }
 
@@ -57,8 +62,15 @@ ul {
 
 .wrapper {
 	max-width: 1280px;
-	padding-left: 1.2rem;
-	padding-right: 1.2rem;
+	padding: 0 1rem;
+	
+	@include media(400px) {
+		padding: 0 1.5rem;
+	}
+
+	@include media(640px) {
+		padding: 0 2rem;
+	}
 }
 
 /* ----- FOOTER ----- */

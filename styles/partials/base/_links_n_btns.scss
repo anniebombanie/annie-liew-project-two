@@ -5,21 +5,15 @@
 }
 
 /* ----- TEXT LINKS ----- */
-nav .link__txt.link__txt--active {
-	&::after {
-		opacity: 1;
-	}
-}
-
 .link__txt,
 .link__txt--active {
 	position: relative;
 	&::after {
 		content: '';
 		width: 100%;
-		height: 3px;
+		height: rem-calc(3px);
 		position: absolute;
-		bottom: -5px;
+		bottom: rem-calc(-5px);
 		left: 0;
 		background-color: $color-aqua;
 	}
@@ -41,11 +35,10 @@ nav .link__txt.link__txt--active {
 .link__btn {
 	color: $color-purple;
 	background-color: $color-aqua;
-	font-size: 1.25rem;
-	line-height: 2.05rem;
+	font-size: rem-calc(25px);
 	text-transform: capitalize;
-	padding: .3rem .7rem;
-	border: 2px solid $color-aqua;
+	padding: rem-calc(8px 18px);
+	border: rem-calc(2px) solid $color-aqua;
 	transition: background-color .2s, color .2s;
 	&:hover {
 		color: $color-aqua;
@@ -70,8 +63,8 @@ nav .link__txt.link__txt--active {
 
 /* ----- SOCIAL ICON LINKS ----- */
 .link__icon {
-	font-size: 1rem;
-	margin-right: 1rem;
+	font-size: rem-calc(22px);
+	padding: 0 .6rem;
 	transition: color .2s;
 	&:hover {
 		color: $color-aqua;

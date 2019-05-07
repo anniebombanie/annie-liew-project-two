@@ -1,37 +1,21 @@
+// This menu is short and fits one line on 320px screen so not implementing hamburger to improve UX and accessibility 
+// Based on ideas from the following articles: https://medium.muz.li/3-good-reason-why-you-might-want-to-remove-that-hamburger-menu-from-your-product-69b9499ba7e2 & https://www.nngroup.com/articles/hamburger-menus
+
 /* ========== NAV ========== */
+nav {
+  text-transform: capitalize;
+  font-weight: 700;
+  max-width: rem-calc(400px);
+}
 
-// @media (max-width: 635px) {
-  
-// .topNav {
-//   position: relative;
-//   width: 100%;
-// }
+nav .link__txt.link__txt--active {
+	&::after {
+		opacity: 1;
+	}
+}
 
-// .topNav label {
-//   display: block; /* show hamburger */
-//   cursor: pointer;
-//   z-index: 20;
-// }
-
-// .topNav ul {
-//   margin: auto;
-//   padding: 25vh 0 0 0;
-//   background: rgba(32, 30, 31, .98);
-//   height: 100vh;
-//   width: 100%;
-//   z-index: 10;
-//   position: absolute;
-//   transform: scaleY(0);
-//   transition: transform ease-in .2s;
-// }
-
-// .topNav li {
-//   float: none;
-//   text-align: center;
-//   font-size: 1.5rem;
-//   padding: 20px;
-// }
-
-// input:checked ~ ul {
-//   transform: scaleY(1);
-// }
+ul.nav-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+}
