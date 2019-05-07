@@ -23,10 +23,10 @@ textarea {
 		font-size: rem-calc(19px);
 		line-height: rem-calc(30px);
 	}
-}
 
-header {
-	height: 60vh;
+	@include media(800px){
+		font-size: 1rem;
+	}
 }
 
 input,
@@ -50,8 +50,15 @@ img {
 form,
 section,
 aside {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding: 2rem 0;
+
+	@include media(640px) {
+		padding: 3rem 0;
+	}
+
+	@include media(800px) {
+		padding: 4.5rem 0;
+	}
 }
 
 ul {

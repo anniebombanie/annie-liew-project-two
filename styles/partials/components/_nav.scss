@@ -18,4 +18,8 @@ ul.nav-top {
   display: flex;
   justify-content: space-between;
   padding-top: 2.5rem;
+
+  @include media(800px) {
+    padding-top: 3rem;
+  }
 }

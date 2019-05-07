@@ -1,11 +1,4 @@
 /* ========== BLOG ========== */
-
-/* ----- HEADER ----- */
-header.blog {
-  @include bg-img('blog-header.jpg');
-  height: 50vh;
-}
-
 /* ----- ARTICLE ----- */
 .blog section:first-child {
   border-bottom: solid rem-calc(5px) $color-aqua;

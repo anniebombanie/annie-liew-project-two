@@ -233,8 +233,12 @@ textarea {
   }
 }
 
-header {
-  height: 60vh;
+@media (min-width: 800px) {
+  body,
+  input,
+  textarea {
+    font-size: 1rem;
+  }
 }
 
 input,
@@ -258,8 +262,23 @@ img {
 form,
 section,
 aside {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
+}
+
+@media (min-width: 640px) {
+  form,
+  section,
+  aside {
+    padding: 3rem 0;
+  }
+}
+
+@media (min-width: 800px) {
+  form,
+  section,
+  aside {
+    padding: 4.5rem 0;
+  }
 }
 
 ul {
@@ -317,25 +336,36 @@ h3,
   font-family: "Walter Turncoat", cursive;
 }
 
-h1 {
-  line-height: 3rem;
-  position: relative;
-  top: 5rem;
-}
-
 .home h1 {
   font-size: 2.95rem;
+  -webkit-transform: translateY(6rem);
+          transform: translateY(6rem);
 }
 
-@media (min-width: 750px) {
+@media (min-width: 700px) {
   .home h1 {
-    font-size: 3.75rem;
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .home h1 {
+    -webkit-transform: translateY(10rem);
+            transform: translateY(10rem);
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .home h1 {
+    font-size: 4.4rem;
   }
 }
 
 .contact h1,
 .blog h1 {
   font-size: 2.6rem;
+  line-height: 3rem;
 }
 
 h2 {
@@ -346,6 +376,12 @@ h2 {
 @media (min-width: 400px) {
   h2 {
     font-size: 2rem;
+  }
+}
+
+@media (min-width: 600px) {
+  h2 {
+    font-size: 2.25rem;
   }
 }
 
@@ -366,7 +402,7 @@ a {
 
 /* ========== LINKS & BUTTONS ========== */
 .container__link {
-  margin-top: 1.5rem;
+  margin-top: 2.2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -464,6 +500,12 @@ ul.nav-top {
   padding-top: 2.5rem;
 }
 
+@media (min-width: 800px) {
+  ul.nav-top {
+    padding-top: 3rem;
+  }
+}
+
 /* ========== FORMS ========== */
 textarea {
   resize: vertical;
@@ -492,6 +534,20 @@ textarea {
 }
 
 /* ========== INDEX ========== */
+header.home {
+  content: '';
+  background: url(./../assets/home-header.jpg) no-repeat center;
+  background-size: cover;
+  height: 60vh;
+}
+
+@media (min-width: 800px) {
+  header.home {
+    height: 80vh;
+  }
+}
+
+/* ----- ABOUT 1 ----- */
 .about .container__img {
   position: relative;
 }
@@ -502,14 +558,6 @@ textarea {
   width: calc(100% - 20px);
 }
 
-/* ----- HEADER ----- */
-header.home {
-  content: '';
-  background: url(./../assets/home-header.jpg) no-repeat center;
-  background-size: cover;
-}
-
-/* ----- ABOUT 1 ----- */
 .about--1 .container__img {
   display: none;
 }
@@ -536,8 +584,33 @@ header.home {
   margin-bottom: -38%;
 }
 
+@media (min-width: 800px) {
+  .about--1 .container__img::before {
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
+    margin-bottom: -32%;
+  }
+}
+
+@media (min-width: 900px) {
+  .about--1 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .about--1 li {
   margin-bottom: 1.8rem;
+}
+
+@media (min-width: 900px) {
+  .about--1 li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .container__icon-heading {
@@ -583,20 +656,32 @@ header.home {
   height: 65vw;
 }
 
+@media (min-width: 550px) {
+  .about--2 .container__img::before {
+    height: 50vw;
+  }
+}
+
 .about--2 .container__img--1::before {
   content: '';
   background: url(./../assets/left-image.jpg) no-repeat center;
   background-size: cover;
-  margin: -70px 20px 50px 0;
+  margin: -3.5rem 1rem 3rem 0;
   -webkit-box-shadow: 1rem 1rem #08fded;
           box-shadow: 1rem 1rem #08fded;
+}
+
+@media (min-width: 800px) {
+  .about--2 .container__img--1::before {
+    margin: -5.5rem 1rem 3rem 0;
+  }
 }
 
 .about--2 .container__img--2::before {
   content: '';
   background: url(./../assets/right-image.jpg) no-repeat center;
   background-size: cover;
-  margin: 2.75rem 0 2.5rem 1rem;
+  margin: 2.75rem 0 3rem 1rem;
   -webkit-box-shadow: -1rem 1rem #08fded;
           box-shadow: -1rem 1rem #08fded;
 }
@@ -623,9 +708,15 @@ header.home {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 550px) {
   .img-break {
     height: 45vw;
+  }
+}
+
+@media (min-width: 800px) {
+  .img-break {
+    height: 35vw;
   }
 }
 
@@ -680,12 +771,11 @@ header.home {
 }
 
 /* ========== BLOG ========== */
-/* ----- HEADER ----- */
 header.blog {
   content: '';
   background: url(./../assets/blog-header.jpg) no-repeat center;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
 }
 
 /* ----- ARTICLE ----- */
@@ -752,6 +842,7 @@ header.contact {
   content: '';
   background: url(./../assets/contact-header.jpg) no-repeat center;
   background-size: cover;
+  height: 60vh;
 }
 
 /* ----- ASIDE ----- */

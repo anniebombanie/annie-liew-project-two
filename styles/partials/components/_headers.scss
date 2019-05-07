@@ -1,0 +1,22 @@
+/* ========== HEADERS ========== */
+header.home,
+header.blog,
+header.contact {
+  height: 60vh;
+}
+
+header.home {
+  @include bg-img('home-header.jpg'); //! MUST make this a string using '' due to .
+
+	@include media(800px) {
+    height: 80vh;
+	}
+}
+
+header.blog {
+  @include bg-img('blog-header.jpg');
+}
+
+header.contact {
+  @include bg-img('contact-header.jpg');
+}
