@@ -28,23 +28,7 @@ section .container__comment:last-of-type {
 }
 
 // ----- ASIDE -----
-aside.blog ul{
-  margin-top: 1rem;
-}
-
-aside.blog li {
-  &::before {
-    content: '\2022';
-    color: $color-aqua;
-    margin-right: rem-calc(16px);
-  }
-}
-
-aside.blog p {
-  margin-bottom: 2rem;
-}
-
-aside.blog .container__img {
+aside.blog {
   position: relative;
   &::before {
     position: relative;
@@ -53,5 +37,21 @@ aside.blog .container__img {
     @include bg-img('blog-side-image.jpg');
     margin: rem-calc(25px 20px -50px 0);
     transform: translateY(rem-calc(-85px));
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  ul{
+    margin-top: 1rem;
+  }
+
+  li {
+  &::before {
+    content: '\2022';
+    color: $color-aqua;
+    margin-right: rem-calc(16px);
+    }
   }
 }
