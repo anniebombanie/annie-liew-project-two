@@ -768,10 +768,22 @@ main.contact {
   margin-bottom: 3rem;
 }
 
+@media (min-width: 900px) {
+  .about--2 .container__img-txt .container__txt {
+    width: 50%;
+  }
+}
+
 .about--2 .container__img-txt .container__txt::before {
   content: '';
   display: block;
   height: 65vw;
+}
+
+@media (min-width: 600px) {
+  .about--2 .container__img-txt .container__txt::before {
+    height: 50vw;
+  }
 }
 
 .about--2 .container__txt--1::before {

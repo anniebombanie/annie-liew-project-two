@@ -81,13 +81,22 @@
     margin-bottom: 3rem;
 
     .container__txt {
+      @include media (900px) {
+        width: 50%;
+      }
+
       &::before {
         content: '';
         display: block;
         height: 65vw; //Height scales according to width - kudos to https://jonathanwong.dev
+
+        @include media (600px) {
+          height: 50vw;
+        }
       }
     }
   }
+
   .container__txt--1 {
     &::before {
       @include bg-img('left-image.jpg');
