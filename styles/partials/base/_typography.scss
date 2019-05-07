@@ -41,7 +41,7 @@ h3,
 
 	@include media(700px) {
 		font-size: rem-calc(100px);
-		transform: translateY(rem-calc(70px));
+		transform: translateY(rem-calc(75px));
 	}
 
 	@include media(1024px) {
