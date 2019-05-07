@@ -1011,12 +1011,12 @@ aside.blog .container__img::before {
 }
 
 /* ========== CONTACT ========== */
-.container__main-aside .wrapper {
+.container__main-aside.wrapper {
   padding: 0;
 }
 
 @media (min-width: 900px) {
-  .container__main-aside .wrapper {
+  .container__main-aside.wrapper {
     padding: 0 2rem;
   }
 }
