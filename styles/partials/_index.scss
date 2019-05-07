@@ -42,8 +42,8 @@
   margin-bottom: 1.8rem;
 
   @include media(900px) {
-    flex-basis: calc(50% - 1.2rem);
-    margin: 1.2rem;
+    flex-basis: calc(50% - .5rem);
+    margin: .5rem;
     &:nth-child(odd) {
       margin-left: 0;
     }
@@ -104,7 +104,7 @@
   .container__img--2 {
     &::before {
       @include bg-img('right-image.jpg');
-      margin: rem-calc(55px 0 60px 20px);
+      margin: rem-calc(0 0 60px 20px);
       @include box-shadow(-1rem, 1rem);
     }
   }
@@ -123,12 +123,6 @@
           height: 35vw;
         }
       }
-      .container__img-txt:first-child {
-        margin-bottom: 4rem;
-      }
-      .container__img-txt:last-child {
-        margin-bottom: -4rem;
-      }
       .container__img--1 {
         margin-top: rem-calc(-8px);
       }
@@ -136,6 +130,20 @@
       .container__img--2 {
         margin-top: 5rem;
         order: 2;
+      }
+    }
+
+    .container__img-txt:first-child {
+      margin-bottom: 1rem;
+      .wrapper.container__txt {
+      padding-left: 1rem;
+      }
+    }
+    .container__img-txt:last-child {
+      margin-bottom: -7rem;
+      text-align: right;
+      .wrapper.container__txt {
+      padding-right: 1rem;
       }
     }
   }

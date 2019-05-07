@@ -9,14 +9,11 @@ textarea {
   height: 9rem;
 }
 
-@include media(800px) {
-  .container__form-input {
-    display: flex;
+.container__form-input {
     input {
-      flex-basis: 50%;
+      width: 50%;
     }
   }
-}
 
 /* ----- CONTACT FORM ----- */
 .contact input {
