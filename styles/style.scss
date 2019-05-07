@@ -2,9 +2,10 @@
 @import './partials/base/vars-n-mixins';
 @import './partials/base/global';
 @import './partials/base/typography';
-@import './partials/base/links_n_btns';
-@import './partials/base/nav';
-@import './partials/base/forms';
+@import './partials/components/links_n_btns';
+@import './partials/components/nav';
+@import './partials/components/headers';
+@import './partials/components/forms';
 @import './partials/index';
 @import './partials/blog';
 @import './partials/contact';
