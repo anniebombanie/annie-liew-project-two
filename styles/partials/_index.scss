@@ -1,34 +1,16 @@
 /* ========== INDEX ========== */
 
 // ----- ABOUT 1 -----
-.about .container__img {
-  position: relative;
-  display: block; //! REMEMBER- pseudo element for img not defined in global
-  @include position(relative, null, null, null, null); // null = won't output in .css
-  width: calc(100% - 20px); // 10px for box-shadow
-}
-
-.about--1 .container__img {
-  display: none;
-  @include bg-img('home-box-header.jpg');
-  @include position(relative, -45vh, null, null, null);
-  height: 40vw;
-  width: 45%;
-  margin-bottom: -38%;
-
-  @include media(640px) { // write media queries directly inside each element to deal with specificity issues 
-    display: flex;
-    justify-content: flex-end;
+.about--1 {
+  @include media(640px) {
+    padding-top: 6.2rem;
   }
 
-  @include media(800px) {
-    transform: translateY(rem-calc(-80));
-    margin-bottom: -32%;
+  @include media(900px) {
+    padding-top: 8rem;
   }
-}
 
-@include media(900px) {
-	.about--1 {
+	 @include media(900px) { // write media queries directly inside each element to reduce specificity issues
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -36,18 +18,15 @@
 
     li {
     margin-bottom: 1.8rem;
-    
-    @include media(900px) {
-      flex-basis: calc(50% - .5rem);
-      margin: .5rem;
-        &:nth-child(odd) {
-          margin-left: 0;
-        }
-        &:nth-child(even) {
-          margin-right: 0;
-        }
+    flex-basis: calc(50% - .5rem);
+    margin: .5rem;
+      &:nth-child(odd) {
+        margin-left: 0;
       }
-    } 
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -62,7 +41,7 @@
   background-color: $color-aqua;
   border-radius: 50%;
   padding: .5rem;
-  margin-right: .8rem;
+  margin-right: .9rem;
   width: rem-calc(54px);
   height: rem-calc(54px);
   font-size: 1.4rem;
@@ -71,7 +50,7 @@
 
 @include media(400px) {
    .about--1 li > p {
-    padding-left: 3.5rem;
+    padding-left: 3.7rem;
    }
   }
 

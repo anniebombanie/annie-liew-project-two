@@ -7,17 +7,16 @@ h3,
 	font-family: $font-secondary;
 }
 
+h1 {
+	position: absolute;
+}
+
 .home h1 {
 	font-size: rem-calc(59px);
-	transform: translateY(rem-calc(120px));
+	bottom: 25%;
 
 	@include media(700px) {
 		font-size: rem-calc(64px);
-	}
-
-	@include media(800px) {
-		transform: translateY(rem-calc(200px));
-		font-size: rem-calc(72px);
 	}
 
 	@include media(900px) {
@@ -26,6 +25,14 @@ h3,
 
 	@include media(1024px) {
      font-size: rem-calc(100px);   
+	}
+
+	@include media(1200px) {
+     font-size: rem-calc(120px);   
+	}
+	
+	@include media(1440px) {
+     font-size: rem-calc(145px);   
   }
 }
 
@@ -75,9 +82,5 @@ a {
 
 .comment__date {
 	font-weight: 700;
-	font-style: italic; //change to goodfonts i
+	font-style: italic;
 }
-// h2 {font-size: 2.25rem;} New Space
-// h1 {font-size: 2rem;} our programs
-// body {font-size: 1rem;}
-// nav {font-size: 1rem; font-weight: bold;}

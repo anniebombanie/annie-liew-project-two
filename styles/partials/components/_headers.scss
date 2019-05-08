@@ -3,7 +3,7 @@ header.home,
 header.blog,
 header.contact {
   height: 60vh;
-  
+
   @include media(800px) {
     height: 75vh;
 	}
@@ -11,6 +11,24 @@ header.contact {
 
 header.home {
   @include bg-img('home-header.jpg'); //! MUST make this a string using '' due to .
+  position: relative;
+
+  @include media(640px) {
+    &::after {
+      content: '';
+      display: block;
+      @include bg-img('home-box-header.jpg');
+      @include position(absolute, null, 0, -5rem, null);
+      height: 40vw;
+      width: 45%;
+    }
+  }
+
+  @include media(1440px) {
+    &::after {
+      height: rem-calc(576px);
+    }
+  }
 
 	@include media(800px) {
     height: 90vh;

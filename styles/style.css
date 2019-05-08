@@ -311,23 +311,18 @@ h3,
   font-family: "Walter Turncoat", cursive;
 }
 
+h1 {
+  position: absolute;
+}
+
 .home h1 {
   font-size: 2.95rem;
-  -webkit-transform: translateY(6rem);
-          transform: translateY(6rem);
+  bottom: 25%;
 }
 
 @media (min-width: 700px) {
   .home h1 {
     font-size: 3.2rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .home h1 {
-    -webkit-transform: translateY(10rem);
-            transform: translateY(10rem);
-    font-size: 3.6rem;
   }
 }
 
@@ -340,6 +335,18 @@ h3,
 @media (min-width: 1024px) {
   .home h1 {
     font-size: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home h1 {
+    font-size: 7.25rem;
   }
 }
 
@@ -557,6 +564,28 @@ header.home {
   content: '';
   background: url(./../assets/home-header.jpg) no-repeat center;
   background-size: cover;
+  position: relative;
+}
+
+@media (min-width: 640px) {
+  header.home::after {
+    content: '';
+    display: block;
+    content: '';
+    background: url(./../assets/home-box-header.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+    height: 40vw;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1440px) {
+  header.home::after {
+    height: 28.8rem;
+  }
 }
 
 @media (min-width: 800px) {
@@ -685,41 +714,15 @@ main.contact {
 }
 
 /* ========== INDEX ========== */
-.about .container__img {
-  position: relative;
-  display: block;
-  position: relative;
-  width: calc(100% - 20px);
-}
-
-.about--1 .container__img {
-  display: none;
-  content: '';
-  background: url(./../assets/home-box-header.jpg) no-repeat center;
-  background-size: cover;
-  position: relative;
-  top: -45vh;
-  height: 40vw;
-  width: 45%;
-  margin-bottom: -38%;
-}
-
 @media (min-width: 640px) {
-  .about--1 .container__img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+  .about--1 {
+    padding-top: 6.2rem;
   }
 }
 
-@media (min-width: 800px) {
-  .about--1 .container__img {
-    -webkit-transform: translateY(-4rem);
-            transform: translateY(-4rem);
-    margin-bottom: -32%;
+@media (min-width: 900px) {
+  .about--1 {
+    padding-top: 8rem;
   }
 }
 
@@ -733,11 +736,6 @@ main.contact {
   }
   .about--1 li {
     margin-bottom: 1.8rem;
-  }
-}
-
-@media (min-width: 900px) and (min-width: 900px) {
-  .about--1 li {
     -ms-flex-preferred-size: calc(50% - .5rem);
         flex-basis: calc(50% - .5rem);
     margin: .5rem;
@@ -767,7 +765,7 @@ main.contact {
   background-color: #08fded;
   border-radius: 50%;
   padding: .5rem;
-  margin-right: .8rem;
+  margin-right: .9rem;
   width: 2.7rem;
   height: 2.7rem;
   font-size: 1.4rem;
@@ -784,7 +782,7 @@ main.contact {
 
 @media (min-width: 400px) {
   .about--1 li > p {
-    padding-left: 3.5rem;
+    padding-left: 3.7rem;
   }
 }
 
