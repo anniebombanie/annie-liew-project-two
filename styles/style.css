@@ -1173,15 +1173,13 @@ textarea {
   }
 }
 
-main .wrapper {
+.blog.wrapper {
   padding-right: 0;
 }
 
 @media (min-width: 900px) {
-  main {
-    margin-right: -2rem;
-    width: 60%;
-  }
+  margin-right: -2rem;
+  width: 60%;
 }
 
 section.blog__post {
@@ -1227,9 +1225,7 @@ section.blog__post .container__txt-blog-post {
 
 @media (min-width: 1440px) {
   section.blog__post .container__txt-blog-post {
-    position: absolute;
-    right: 0;
-    height: 36vw;
+    margin-top: 22rem;
   }
 }
 
@@ -1323,13 +1319,6 @@ aside.blog::before {
     width: 14rem;
     top: 3rem;
     left: 0;
-  }
-}
-
-@media (min-width: 900px) {
-  aside.blog::before {
-    margin-top: .5rem;
-    width: 36vw;
   }
 }
 

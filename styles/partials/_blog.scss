@@ -9,8 +9,7 @@
 }
 
 // ----- ARTICLE -----
-main {
-  .wrapper {
+.blog.wrapper {
     padding-right: 0;
   }
 
@@ -18,7 +17,6 @@ main {
     margin-right: -2rem;
     width: 60%;
   }
-}
 
 section.blog__post {
   border-bottom: solid rem-calc(5px) $color-aqua;
@@ -51,9 +49,7 @@ section.blog__post {
     }
 
     @include media(1440px) {
-      position: absolute;
-      right: 0;
-      height: 36vw;
+      margin-top: 22rem;
     }
   }
 }
@@ -131,10 +127,11 @@ aside.blog {
       left: 0;
     }
 
-    @include media(900px) {
-      margin-top: .5rem;
-      width: 36vw;
-    }
+    // @include media(900px) {
+    //   margin-top: .5rem;
+    //   height: rem-calc(200px);
+    //   width: 54vw;
+    // }
   }
 
   p {
