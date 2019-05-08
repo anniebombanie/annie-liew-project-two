@@ -1,7 +1,9 @@
 /* ========== BLOG ========== */
 // ----- ARTICLE -----
-main.blog .wrapper {
-  padding-right: 0;
+main.blog {
+  .wrapper {
+    padding-right: 0;
+  }
 }
 
 section.blog__post {
@@ -82,6 +84,7 @@ section.blog__post {
 // ----- ASIDE -----
 aside.blog {
   position: relative;
+
   &::before {
     content: '';
     position: relative;
@@ -90,6 +93,10 @@ aside.blog {
     @include bg-img('blog-side-image.jpg');
     margin: rem-calc(25px 20px -50px 0);
     transform: translateY(rem-calc(-85px));
+
+    @include media(900px) {
+      margin-top: -1rem;
+    }
   }
 
   p {
@@ -112,5 +119,6 @@ aside.blog {
     order: -10;
     text-align: left;
     margin-top: 6rem;
+    width: rem-calc(370px);
   }
 }
