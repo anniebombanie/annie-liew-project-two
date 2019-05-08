@@ -1212,6 +1212,7 @@ section.blog__post .container__img {
     position: absolute;
     right: 0;
     height: 36vw;
+    max-height: 29rem;
   }
 }
 
