@@ -6,16 +6,15 @@ textarea {
 
 textarea {
   resize: vertical;
-  height: 9rem;
+  height: 12rem;
   margin: 1.4rem 0 2.4rem;
 }
 
-  .container__form-input {
+.container__form-input {
   @include media(720px) {
     display: flex;
     input {
       width: 50%;
-      // margin: 0 .5rem;
     }
     input.form__input-name {
       margin-right: .7rem;
@@ -29,7 +28,6 @@ textarea {
     display: block;
     input {
       width: 100%;
-      // margin: 0 .5rem;
     }
     input.form__input-name {
       margin-right: 0;
@@ -43,7 +41,6 @@ textarea {
     display: flex;
     input {
       width: 50%;
-      // margin: 0 .5rem;
     }
     input.form__input-name {
       margin-right: .7rem;
@@ -52,13 +49,11 @@ textarea {
       margin-left: .7rem;
     }
   }
-
 }
 
 // ----- CONTACT FORM -----
 main.contact {
   
-
   @include media(900px) {
     display: flex;
     position: relative;
@@ -72,6 +67,7 @@ main.contact {
 }
 
 .contact form {
+  width: 100%;
   padding: 3rem 2rem;
   @include box-shadow (1rem, 1rem);
 

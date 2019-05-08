@@ -611,7 +611,7 @@ textarea {
 
 textarea {
   resize: vertical;
-  height: 9rem;
+  height: 12rem;
   margin: 1.4rem 0 2.4rem;
 }
 
@@ -682,6 +682,7 @@ textarea {
 }
 
 .contact form {
+  width: 100%;
   padding: 3rem 2rem;
   -webkit-box-shadow: 1rem 1rem 0 #08fded;
           box-shadow: 1rem 1rem 0 #08fded;
