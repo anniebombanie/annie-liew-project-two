@@ -25,27 +25,35 @@ section.blog__post {
       transform: translateY(-9.2rem);
       margin-bottom: -6rem;
     }
+
+    @include media(1440px) {
+      position: absolute;
+      right: 0;
+      height: 36vw;
+    }
   }
 
   .container__txt-blog-post {
-    padding: 0 10%;
+    padding: 1rem;
+
+    @include media(1440px) {
+      position: absolute;
+      right: 0;
+      height: 36vw;
+    }
   }
 }
 
 // ----- COMMENTS -----
 .blog__comments {
-  padding-right: 1rem;
+  padding: 1rem;
 
   @include media(400px) {
-		padding-right: 1.5rem;
+		padding: 1.5rem;
 	}
 
 	@include media(640px) {
-		padding-right: 2rem;
-  }
-  
-  h2 {
-    margin-bottom: 1rem;
+		padding: 2rem;
   }
 }
 
@@ -166,6 +174,10 @@ aside.blog {
     text-align: left;
     margin-top: 6rem;
     margin-left: -2rem;
-    width: 44.5rem;
+    width: 390px;
   }
+
+  //  @include media(1017px) {
+  //   max-width: 19rem;
+  // }
 }

@@ -78,6 +78,15 @@ h2 {
 		font-size: rem-calc(45px);
 	}
 }
+
+.blog h2,
+.blog__comments h2 {
+
+	@include media(600px) {
+		font-size: rem-calc(65px);
+		margin-bottom: 1.5rem;
+	}
+}
  
 h3 {
 	font-size: rem-calc(26px);
