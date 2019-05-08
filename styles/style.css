@@ -1142,18 +1142,35 @@ section.blog__post {
   border-bottom: solid 0.25rem #08fded;
 }
 
-section.blog__post::before {
-  content: '';
-  content: '';
-  background: url(./../assets/blog-post-imag.jpg) no-repeat center;
-  background-size: cover;
-  -webkit-box-shadow: -1rem 1rem 0 #08fded;
-          box-shadow: -1rem 1rem 0 #08fded;
+section.blog__post img {
   display: block;
   width: 100%;
-  height: 20rem;
-  margin: -8rem -.5rem 2rem 0;
-  z-index: 10;
+  -webkit-transform: translateY(-6rem);
+          transform: translateY(-6rem);
+  margin-bottom: -3rem;
+  -webkit-box-shadow: -1rem 1rem 0 #08fded;
+          box-shadow: -1rem 1rem 0 #08fded;
+}
+
+@media (min-width: 600px) {
+  section.blog__post img {
+    -webkit-transform: translate(0.75rem, -6rem);
+            transform: translate(0.75rem, -6rem);
+  }
+}
+
+section.blog__post .container__txt-blog-post {
+  padding-left: 12%;
+}
+
+@media (min-width: 600px) {
+  section.blog__post {
+    border-left: solid 0.25rem #08fded;
+  }
+}
+
+.blog__comments h2 {
+  margin-bottom: 1rem;
 }
 
 .blog .form__comment {

@@ -2,19 +2,32 @@
 // ----- ARTICLE -----
 section.blog__post {
   border-bottom: solid rem-calc(5px) $color-aqua;
-  &::before {
-    content: '';
-    @include bg-img('blog-post-imag.jpg');
-    @include box-shadow (-1rem, 1rem);
+  img {
     display: block;
     width: 100%;
-    height: rem-calc(400px);
-    margin: -8rem -.5rem 2rem 0;
-    z-index: 10;
+    transform: translateY(-6rem); // Margin makes image disappear behind header
+    margin-bottom: -3rem;
+    @include box-shadow (-1rem, 1rem);
+
+    @include media(600px) {
+      transform: translate(.75rem, -6rem);
+    }
+  }
+
+  .container__txt-blog-post {
+    padding-left: 12%;
+  }
+
+  @include media(600px) {
+    border-left: solid rem-calc(5px) $color-aqua;
   }
 }
 
 // ----- COMMENTS -----
+.blog__comments h2 {
+  margin-bottom: 1rem;
+}
+
 .blog .form__comment {
   border: solid rem-calc(2px) $color-aqua;
   height: 9rem;
