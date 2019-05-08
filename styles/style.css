@@ -1173,13 +1173,15 @@ textarea {
   }
 }
 
-.blog.wrapper {
+main.blog {
   padding-right: 0;
 }
 
 @media (min-width: 900px) {
-  margin-right: -2rem;
-  width: 60%;
+  main.blog {
+    margin-right: -2rem;
+    width: 60%;
+  }
 }
 
 section.blog__post {
