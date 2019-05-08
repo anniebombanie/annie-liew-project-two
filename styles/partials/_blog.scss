@@ -7,6 +7,7 @@ main.blog .wrapper {
 section.blog__post {
   border-bottom: solid rem-calc(5px) $color-aqua;
   border-left: solid rem-calc(5px) $color-aqua;
+  
   .container__img {
     transform: translateY(-6rem); // Margin makes image disappear behind header
     margin-bottom: -3rem;
@@ -14,9 +15,10 @@ section.blog__post {
     @include box-shadow (-1rem, 1rem);
     overflow: hidden;
 
-    // @include media(600px) {
-    //   transform: translate(.75rem, -6rem);
-    // }
+    @include media(900px) {
+      transform: translateY(-9.2rem);
+      margin-bottom: -6rem;
+    }
   }
 
   .container__txt-blog-post {
@@ -104,5 +106,11 @@ aside.blog {
     color: $color-aqua;
     margin-right: rem-calc(16px);
     }
+  }
+
+  @include media(900px) {
+    order: -10;
+    text-align: left;
+    margin-top: 6rem;
   }
 }

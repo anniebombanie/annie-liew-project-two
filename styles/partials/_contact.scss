@@ -11,6 +11,7 @@
   @include media(900px) {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
@@ -43,7 +44,7 @@ aside.contact {
 
   .container__txt {
     @include media(900px) {
-      max-width: rem-calc(240px);
+      max-width: rem-calc(240px); //'Unit 10' stays together
     }
 
     @include media(1200px) {

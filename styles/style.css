@@ -1157,6 +1157,14 @@ section.blog__post .container__img {
   overflow: hidden;
 }
 
+@media (min-width: 900px) {
+  section.blog__post .container__img {
+    -webkit-transform: translateY(-9.2rem);
+            transform: translateY(-9.2rem);
+    margin-bottom: -6rem;
+  }
+}
+
 section.blog__post .container__txt-blog-post {
   padding: 0 10%;
 }
@@ -1257,6 +1265,16 @@ aside.blog li::before {
   margin-right: 0.8rem;
 }
 
+@media (min-width: 900px) {
+  aside.blog {
+    -webkit-box-ordinal-group: -9;
+        -ms-flex-order: -10;
+            order: -10;
+    text-align: left;
+    margin-top: 6rem;
+  }
+}
+
 /* ========== CONTACT ========== */
 .container__main-aside.wrapper {
   padding: 0;
@@ -1276,6 +1294,9 @@ aside.blog li::before {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
