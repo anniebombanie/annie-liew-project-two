@@ -7,6 +7,14 @@
   }
 }
 
+.contact.container__main-aside {
+  @include media(900px) {
+    display: flex;
+    justify-content: space-between;
+		align-items: flex-start;
+  }
+}
+
 // ----- ASIDE -----
 aside.contact {
   padding: 4rem 0 3rem;

@@ -1,19 +1,23 @@
 /* ========== BLOG ========== */
-.blog.container__main-aside {
-  @include media(900px) {
-		flex-wrap: wrap; // MUST use this if giving explicit widths for it to listen ~ Jenny
+.contact.container__main-aside {
+  @include media(1000px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;  //MUST use this if giving explicit widths for it to listen ~ Jenny
   }
 }
 
 // ----- ARTICLE -----
-main.blog {
+main {
   .wrapper {
     padding-right: 0;
   }
 
-  @include media(900px) {
-    margin-right: -2rem;
-  }
+  // @include media(1000px) {
+  //   margin-right: -2rem;
+  //   width: 100%;
+  // }
 }
 
 section.blog__post {
@@ -181,10 +185,7 @@ aside.blog {
     text-align: left;
     margin-top: 6rem;
     margin-left: -2rem;
-    width: 47%;
-  }
-
-   @include media(1017px) {
-    max-width: rem-calc(380px);
+    width: 20%;
+   // width: 47%;
   }
 }

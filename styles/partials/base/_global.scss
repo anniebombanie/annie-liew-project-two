@@ -81,14 +81,6 @@ ul {
 	}
 }
 
-.container__main-aside {
-  @include media(900px) {
-    display: flex;
-    justify-content: space-between;
-		align-items: flex-start;
-  }
-}
-
 // ----- FOOTER -----
 footer {
 	padding: .4rem 0;
