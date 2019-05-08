@@ -185,6 +185,15 @@ aside.blog {
     text-align: left;
     margin-top: 6rem;
     margin-left: -2rem;
-   width: 47%;
+    width: 47%;
+    max-width: rem-calc(384px);
+  }
+
+  @include media(900px) {
+    display: block;
+    order: -10;
+    text-align: left;
+    margin-top: 6rem;
+    margin-left: -2rem;
   }
 }

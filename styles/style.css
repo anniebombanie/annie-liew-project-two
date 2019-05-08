@@ -1397,6 +1397,19 @@ aside.blog .container__txt {
     margin-top: 6rem;
     margin-left: -2rem;
     width: 47%;
+    max-width: 19.2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  aside.blog {
+    display: block;
+    -webkit-box-ordinal-group: -9;
+        -ms-flex-order: -10;
+            order: -10;
+    text-align: left;
+    margin-top: 6rem;
+    margin-left: -2rem;
   }
 }
 
