@@ -91,8 +91,19 @@
         height: 65vw; //Height scales according to width - kudos to https://jonathanwong.dev
 
         @include media (600px) {
-          height: 50vw;
+          height: 30vw;
+          position: absolute;
+          width: 50%;
         }
+      }
+    }
+  }
+
+  .container__img-txt--1 {
+    .wrapper {
+      @include media(900px) {
+        display: flex;
+        justify-content: flex-end;
       }
     }
   }
@@ -109,6 +120,11 @@
       @include bg-img('right-image.jpg');
       margin: rem-calc(0 0 60px 20px);
       @include box-shadow(-1rem, 1rem);
+
+      @include media (600px) {
+        top: 0;
+        right: 0;
+      }
     }
   }
 }
@@ -116,7 +132,7 @@
 @include media(900px) {
   .about--2 {
     .container__img-txt {
-      display: flex;
+
       .container__img,
       .container__txt {
         flex-basis: 50%;

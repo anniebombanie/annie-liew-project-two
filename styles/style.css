@@ -782,7 +782,20 @@ main.contact {
 
 @media (min-width: 600px) {
   .about--2 .container__img-txt .container__txt::before {
-    height: 50vw;
+    height: 30vw;
+    position: absolute;
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .about--2 .container__img-txt--1 .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
@@ -804,12 +817,14 @@ main.contact {
           box-shadow: -1rem 1rem 0 #08fded;
 }
 
-@media (min-width: 900px) {
-  .about--2 .container__img-txt {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+@media (min-width: 600px) {
+  .about--2 .container__txt--2::before {
+    top: 0;
+    right: 0;
   }
+}
+
+@media (min-width: 900px) {
   .about--2 .container__img-txt .container__img,
   .about--2 .container__img-txt .container__txt {
     -ms-flex-preferred-size: 50%;
