@@ -312,8 +312,7 @@ h3,
   font-family: "Walter Turncoat", cursive;
 }
 
-h1,
-h2 {
+h1 {
   position: absolute;
 }
 
@@ -356,7 +355,6 @@ h2 {
 .blog h1 {
   font-size: 2.6rem;
   line-height: 3rem;
-  bottom: 52%;
 }
 
 @media (min-width: 500px) {
@@ -378,6 +376,20 @@ h2 {
   .blog h1 {
     font-size: 6.05rem;
   }
+}
+
+.contact h1 {
+  bottom: 33%;
+}
+
+@media (min-width: 347px) {
+  .contact h1 {
+    bottom: 45%;
+  }
+}
+
+.blog h1 {
+  bottom: 45%;
 }
 
 h2 {
