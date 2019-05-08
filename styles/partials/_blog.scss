@@ -1,31 +1,44 @@
 /* ========== BLOG ========== */
 // ----- ARTICLE -----
+main.blog .wrapper {
+  padding-right: 0;
+}
+
 section.blog__post {
   border-bottom: solid rem-calc(5px) $color-aqua;
-  img {
-    display: block;
-    width: 100%;
+  border-left: solid rem-calc(5px) $color-aqua;
+  .container__img {
     transform: translateY(-6rem); // Margin makes image disappear behind header
     margin-bottom: -3rem;
+    margin-left: .75rem;
     @include box-shadow (-1rem, 1rem);
+    overflow: hidden;
 
-    @include media(600px) {
-      transform: translate(.75rem, -6rem);
-    }
+    // @include media(600px) {
+    //   transform: translate(.75rem, -6rem);
+    // }
   }
 
   .container__txt-blog-post {
-    padding-left: 12%;
-  }
-
-  @include media(600px) {
-    border-left: solid rem-calc(5px) $color-aqua;
+    padding: 0 10%;
   }
 }
 
 // ----- COMMENTS -----
-.blog__comments h2 {
-  margin-bottom: 1rem;
+.blog__comments {
+  padding-right: 1rem;
+
+  @include media(400px) {
+		padding-right: 1.5rem;
+	}
+
+	@include media(640px) {
+		padding-right: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 .blog .form__comment {
