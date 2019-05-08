@@ -4,6 +4,10 @@ main.blog {
   .wrapper {
     padding-right: 0;
   }
+
+  @include media(900px) {
+    margin-right: -2rem;
+  }
 }
 
 section.blog__post {
@@ -106,7 +110,8 @@ aside.blog {
     }
 
     @include media(900px) {
-      margin-top: -1rem;
+      margin-top: .5rem;
+      width: 36vw;
     }
   }
 
@@ -140,6 +145,14 @@ aside.blog {
     @include media(700px) {
       width: 60%;
     }
+
+    @include media(700px) {
+      width: 100%;
+    }
+
+    @include media(900px) {
+      margin-top: 12rem;
+    }
   }
 
   @include media(700px) {
@@ -152,6 +165,7 @@ aside.blog {
     order: -10;
     text-align: left;
     margin-top: 6rem;
-    width: rem-calc(370px);
+    margin-left: -2rem;
+    width: 44.5rem;
   }
 }

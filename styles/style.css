@@ -1156,6 +1156,12 @@ main.blog .wrapper {
   padding-right: 0;
 }
 
+@media (min-width: 900px) {
+  main.blog {
+    margin-right: -2rem;
+  }
+}
+
 section.blog__post {
   border-bottom: solid 0.25rem #08fded;
   border-left: solid 0.25rem #08fded;
@@ -1282,7 +1288,8 @@ aside.blog::before {
 
 @media (min-width: 900px) {
   aside.blog::before {
-    margin-top: -1rem;
+    margin-top: .5rem;
+    width: 36vw;
   }
 }
 
@@ -1323,6 +1330,18 @@ aside.blog .container__txt {
 }
 
 @media (min-width: 700px) {
+  aside.blog .container__txt {
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  aside.blog .container__txt {
+    margin-top: 12rem;
+  }
+}
+
+@media (min-width: 700px) {
   aside.blog {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1341,7 +1360,8 @@ aside.blog .container__txt {
             order: -10;
     text-align: left;
     margin-top: 6rem;
-    width: 18.5rem;
+    margin-left: -2rem;
+    width: 44.5rem;
   }
 }
 
