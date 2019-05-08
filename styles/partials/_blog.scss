@@ -34,7 +34,11 @@ section.blog__post {
   }
 
   .container__txt-blog-post {
-    padding: 1rem;
+    padding-right: 1rem;
+
+    @include media(400px) {
+      padding-left: 12%;
+    }
 
     @include media(1440px) {
       position: absolute;

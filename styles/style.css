@@ -423,11 +423,22 @@ h2 {
   }
 }
 
+.blog h2,
+.blog__comments h2 {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 400px) {
+  .blog h2,
+  .blog__comments h2 {
+    font-size: 2.4rem;
+  }
+}
+
 @media (min-width: 600px) {
   .blog h2,
   .blog__comments h2 {
     font-size: 3.25rem;
-    margin-bottom: 1.5rem;
   }
 }
 
@@ -1202,7 +1213,13 @@ section.blog__post .container__img {
 }
 
 section.blog__post .container__txt-blog-post {
-  padding: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 400px) {
+  section.blog__post .container__txt-blog-post {
+    padding-left: 12%;
+  }
 }
 
 @media (min-width: 1440px) {

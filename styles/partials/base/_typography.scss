@@ -81,10 +81,14 @@ h2 {
 
 .blog h2,
 .blog__comments h2 {
+	margin-bottom: 1.5rem;
+
+	@include media(400px) {
+		font-size: rem-calc(48px);
+	}
 
 	@include media(600px) {
-		font-size: rem-calc(65px);
-		margin-bottom: 1.5rem;
+		font-size: rem-calc(65px);	
 	}
 }
  
