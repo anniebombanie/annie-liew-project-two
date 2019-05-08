@@ -1,7 +1,17 @@
 /* ========== BLOG ========== */
 // ----- ARTICLE -----
-.blog section:first-child {
+section.blog__post {
   border-bottom: solid rem-calc(5px) $color-aqua;
+  &::before {
+    content: '';
+    @include bg-img('blog-post-imag.jpg');
+    @include box-shadow (-1rem, 1rem);
+    display: block;
+    width: 100%;
+    height: rem-calc(400px);
+    margin: -8rem -.5rem 2rem 0;
+    z-index: 10;
+  }
 }
 
 // ----- COMMENTS -----
@@ -15,20 +25,37 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  @include media(500px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .container__img-user-profile {
   width: rem-calc(90px);
   height: auto;
-  &:first-child {
-    margin-top: 1rem;
+
+  @include media(500px) {
+    flex-basis: 25%;
+    max-width: rem-calc(92px);
+    margin-top: 1.3rem;
   }
 }
+
+.container__txt-comment {
+  @include media(500px) {
+    flex-basis: calc(75% - 2rem);
+    margin-left: 2rem;
+  }
+}
+
 
 // ----- ASIDE -----
 aside.blog {
   position: relative;
   &::before {
+    content: '';
     position: relative;
     display: block;
     height: rem-calc(300px);

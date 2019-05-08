@@ -32,7 +32,7 @@
   <main class="blog bg--turq" id="blog" tabindex="-1">
     <div class="wrapper">
       <!----- BLOG POST STARTS ----->
-      <section>
+      <section class="blog__post">
         <h2>New activities</h2>
         <p>Monday January 30 by Saron</p>
         <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amen rises. Nam tempus vel odio vitae aliquam.</p>
@@ -42,23 +42,25 @@
       </section>
 
       <!----- BLOG COMMENTS STARTS ----->
-      <section>
+      <section class="blog__comments">
         <h2>comments:</h2>
         <div class="container__comment">
           <div class="container__img-user-profile">
             <img src="./assets/comment-1.jpg" alt="profile pic of first commenter.">
           </div>
-          <p class="comment__date">Tuesday October 9th, 2019 by Mariama</span></p>
-          <p>Fusce vehicle dolor arc, sit amen blanket dolor mollie nec. Donec viverra eleifend locus, vitae ullamcorper mets. Sed sollicitudin ipsum quis nunc sollicitude ultrices. Donec euismod scelerisque liqula.</p>
+          <div class="container__txt-comment">
+            <p class="comment__date">Tuesday October 9th, 2019 by Mariama</span></p>
+            <p>Fusce vehicle dolor arc, sit amen blanket dolor mollie nec. Donec viverra eleifend locus, vitae ullamcorper mets. Sed sollicitudin ipsum quis nunc sollicitude ultrices. Donec euismod scelerisque liqula.</p>
+          </div>
         </div>
         <div class="container__comment">
           <div class="container__img-user-profile">
             <img src="./assets/comment-2.jpg" alt="profile pic of second commenter.">
           </div>
-          <p class="comment__date">Wednesday October 10th, 2019 by Rob</span></p>
-          <p>Donner viverra eleifend Lachs, vitae ullamcorper Mets. Sed sollicitudin ipsum quis nunc sollicitundin ultrices.
-            Donec euismod
-            scelerisque ligua.</p>
+          <div class="container__txt-comment">
+            <p class="comment__date">Wednesday October 10th, 2019 by Rob</span></p>
+            <p>Donner viverra eleifend Lachs, vitae ullamcorper mets. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis vero excepturi perferendis.</p>
+          </div>
         </div>
         <form action="#" method="POST">
           <div class="container__form-input">
@@ -103,8 +105,3 @@
 
 </body>
 </html>
-
-<!-- (header+main>section*6)+footer
-
-(header>ul.top-nav>(li>a)*4)+(main>(div>h2{new activities}+div>(h2{comments:}+(.comment$)*2+form)))+aside+footer
-h2{Events} -->
