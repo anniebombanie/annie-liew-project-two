@@ -94,6 +94,17 @@ aside.blog {
     margin: rem-calc(25px 20px -50px 0);
     transform: translateY(rem-calc(-85px));
 
+    @include media(640px) {
+      margin-top: -.5rem;
+    }
+
+    @include media(700px) {
+      position: absolute;
+      width: rem-calc(280px);
+      top: 3rem;
+      left: 0;
+    }
+
     @include media(900px) {
       margin-top: -1rem;
     }
@@ -115,7 +126,29 @@ aside.blog {
     }
   }
 
+  .container__txt {
+    padding: 0 1rem;
+
+    @include media(400px) {
+      padding: 0 1.5rem;
+    }
+
+    @include media(640px) {
+      padding: 0 2rem;
+    }
+
+    @include media(700px) {
+      width: 60%;
+    }
+  }
+
+  @include media(700px) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
   @include media(900px) {
+    display: block;
     order: -10;
     text-align: left;
     margin-top: 6rem;
