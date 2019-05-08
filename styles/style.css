@@ -794,12 +794,6 @@ main.contact {
 
 @media (min-width: 1000px) {
   .about--2 .container__txt::before {
-    height: 30vw;
-  }
-}
-
-@media (min-width: 1000px) {
-  .about--2 .container__txt::before {
     height: 28vw;
   }
 }
