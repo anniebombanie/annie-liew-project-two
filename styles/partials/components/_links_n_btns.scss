@@ -71,3 +71,32 @@
 		color: $color-aqua;
 	}
 }
+
+// ----- SKIP MAIN LINK -----
+// Adopted from https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: $color-purple;
+    background-color: $color-turq;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid $color-purple;
+    text-align: center;
+    font-size: 1.2rem;
+    z-index: 999;
+}
