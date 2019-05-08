@@ -1,4 +1,10 @@
 /* ========== BLOG ========== */
+.blog.container__main-aside {
+  @include media(900px) {
+		flex-wrap: wrap; // MUST use this if giving explicit widths for it to listen ~ Jenny
+  }
+}
+
 // ----- ARTICLE -----
 main.blog {
   .wrapper {
@@ -175,10 +181,10 @@ aside.blog {
     text-align: left;
     margin-top: 6rem;
     margin-left: -2rem;
-    width: 690px;
+    width: 47%;
   }
 
-  //  @include media(1017px) {
-  //   max-width: 19rem;
-  // }
+   @include media(1017px) {
+    max-width: rem-calc(380px);
+  }
 }

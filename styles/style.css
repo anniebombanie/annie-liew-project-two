@@ -1171,6 +1171,13 @@ textarea {
 }
 
 /* ========== BLOG ========== */
+@media (min-width: 900px) {
+  .blog.container__main-aside {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 main.blog .wrapper {
   padding-right: 0;
 }
@@ -1393,7 +1400,13 @@ aside.blog .container__txt {
     text-align: left;
     margin-top: 6rem;
     margin-left: -2rem;
-    width: 690px;
+    width: 47%;
+  }
+}
+
+@media (min-width: 1017px) {
+  aside.blog {
+    max-width: 19rem;
   }
 }
 
