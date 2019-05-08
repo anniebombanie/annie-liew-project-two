@@ -7,6 +7,13 @@
   }
 }
 
+.container__main-aside {
+  @include media(900px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 // ----- ASIDE -----
 aside.contact {
   padding: 4rem 0 3rem;
@@ -31,22 +38,24 @@ aside.contact {
   @include media(900px) {
     order: -10;
     text-align: left;
+    flex-basis: 30%;
   }
 
   .container__txt {
     @include media(900px) {
       max-width: rem-calc(240px);
     }
+
+    @include media(1200px) {
+      max-width: 100%;
+    }
   }
+}
+
+main.contact {
+  flex-basis: 70%;
 }
 
 .contact p {
   margin: 0;
-}
-
-.container__main-aside {
-  @include media(900px) {
-    display: flex;
-    justify-content: space-between;
-  }
 }

@@ -57,7 +57,7 @@ textarea {
 
 // ----- CONTACT FORM -----
 main.contact {
-  @include box-shadow (1rem, 1rem);
+  
 
   @include media(900px) {
     display: flex;
@@ -73,11 +73,10 @@ main.contact {
 
 .contact form {
   padding: 3rem 2rem;
+  @include box-shadow (1rem, 1rem);
 
   @include media(1100px) {
     padding: 3rem 3.5rem;
-    margin-left: -1.5rem;
-    margin-top: -1rem;
   }
 }
 
