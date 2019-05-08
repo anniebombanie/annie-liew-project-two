@@ -1366,15 +1366,10 @@ aside.blog .container__txt {
   }
 }
 
-@media (min-width: 700px) {
-  aside.blog .container__txt {
-    width: 100%;
-  }
-}
-
 @media (min-width: 900px) {
   aside.blog .container__txt {
     margin-top: 12rem;
+    width: 100%;
   }
 }
 
@@ -1398,7 +1393,7 @@ aside.blog .container__txt {
     text-align: left;
     margin-top: 6rem;
     margin-left: -2rem;
-    width: 390px;
+    width: 690px;
   }
 }
 
