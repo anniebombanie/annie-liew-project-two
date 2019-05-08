@@ -411,7 +411,7 @@ a {
 /* ========== LINKS & BUTTONS ========== */
 .container__link {
   margin-top: 2.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .link__txt,
@@ -658,7 +658,6 @@ main.contact {
 }
 
 /* ========== INDEX ========== */
-/* ----- ABOUT 1 ----- */
 .about .container__img {
   position: relative;
   display: block;
@@ -762,40 +761,26 @@ main.contact {
   }
 }
 
-/* ----- ABOUT 2 ----- */
 .about--2 .container__img-txt {
   position: relative;
   margin-bottom: 3rem;
 }
 
-@media (min-width: 900px) {
-  .about--2 .container__img-txt .container__txt {
-    width: 50%;
-  }
-}
-
-.about--2 .container__img-txt .container__txt::before {
+.about--2 .container__txt::before {
   content: '';
   display: block;
   height: 65vw;
 }
 
 @media (min-width: 600px) {
-  .about--2 .container__img-txt .container__txt::before {
-    height: 30vw;
-    position: absolute;
-    width: 50%;
+  .about--2 .container__txt::before {
+    height: 45vw;
   }
 }
 
-@media (min-width: 900px) {
-  .about--2 .container__img-txt--1 .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+@media (min-width: 800px) {
+  .about--2 .container__txt {
+    width: 50%;
   }
 }
 
@@ -824,7 +809,7 @@ main.contact {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .about--2 .container__img-txt .container__img,
   .about--2 .container__img-txt .container__txt {
     -ms-flex-preferred-size: 50%;
@@ -859,14 +844,12 @@ main.contact {
   }
 }
 
-/* ----- ABOUT 3 ----- */
 @media (min-width: 400px) {
   .about--3 {
     text-align: center;
   }
 }
 
-/* ----- IMG BREAK ----- */
 .img-break {
   content: '';
   background: url(./../assets/banner.jpg) no-repeat center;
@@ -893,7 +876,6 @@ main.contact {
   }
 }
 
-/* ----- ABOUT 4 ----- */
 .about--4 .container__img {
   content: '';
   background: url(./../assets/small-box.jpg) no-repeat center;
@@ -938,7 +920,6 @@ main.contact {
   }
 }
 
-/* ----- GALLERY ----- */
 @media (min-width: 600px) {
   .container__gallery-item {
     display: -webkit-box;

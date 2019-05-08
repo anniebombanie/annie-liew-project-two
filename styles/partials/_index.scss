@@ -1,5 +1,6 @@
 /* ========== INDEX ========== */
-/* ----- ABOUT 1 ----- */
+
+// ----- ABOUT 1 -----
 .about .container__img {
   position: relative;
   display: block; //! REMEMBER- pseudo element for img not defined in global
@@ -74,38 +75,27 @@
    }
   }
 
-/* ----- ABOUT 2 ----- */
+// ----- ABOUT 2 -----
 .about--2 {
   .container__img-txt {
     position: relative;
     margin-bottom: 3rem;
-
-    .container__txt {
-      @include media (900px) {
-        width: 50%;
-      }
-
-      &::before {
-        content: '';
-        display: block;
-        height: 65vw; //Height scales according to width - kudos to https://jonathanwong.dev
-
-        @include media (600px) {
-          height: 30vw;
-          position: absolute;
-          width: 50%;
-        }
-      }
-    }
   }
 
-  .container__img-txt--1 {
-    .wrapper {
-      @include media(900px) {
-        display: flex;
-        justify-content: flex-end;
+  .container__txt {
+    &::before {
+      content: '';
+      display: block;
+      height: 65vw; //Height scales according to width - kudos to https://jonathanwong.dev
+
+      @include media (600px) {
+        height: 45vw;
       }
     }
+    
+    @include media (800px) {
+        width: 50%;
+      }
   }
 
   .container__txt--1 {
@@ -115,6 +105,7 @@
       @include box-shadow(1rem, 1rem); //! MUST include , to seperate values
     }
   }
+
   .container__txt--2 {
     &::before {
       @include bg-img('right-image.jpg');
@@ -127,10 +118,17 @@
       }
     }
   }
-}
 
-@include media(900px) {
-  .about--2 {
+  // .container__img-txt--1 {
+  //   .wrapper {
+  //     @include media(900px) {
+  //       display: flex;
+  //       justify-content: flex-end;
+  //     }
+  //   }
+  // }
+
+  @include media(800px) {
     .container__img-txt {
 
       .container__img,
@@ -172,14 +170,14 @@
   }
 }
 
-/* ----- ABOUT 3 ----- */
+// ----- ABOUT 3 -----
 .about--3 {
   @include media(400px) {
     text-align: center;
   }
 }
 
-/* ----- IMG BREAK ----- */
+// ----- IMG BREAK -----
 .img-break {
   @include bg-img('banner.jpg');
   margin: 0;
@@ -198,7 +196,7 @@
   }
 }
 
-/* ----- ABOUT 4 ----- */
+// ----- ABOUT 4 -----
 .about--4 {
   .container__img {
     @include bg-img('small-box.jpg');
@@ -234,7 +232,7 @@
   }
 }
 
-/* ----- GALLERY ----- */
+// ----- GALLERY -----
 .container__gallery-item {
   @include media(600px) {
     display: flex;
