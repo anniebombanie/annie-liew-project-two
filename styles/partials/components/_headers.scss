@@ -3,6 +3,7 @@ header.home,
 header.blog,
 header.contact {
   height: 60vh;
+  position: relative; //for h1 alignment
 
   @include media(800px) {
     height: 75vh;
@@ -11,8 +12,7 @@ header.contact {
 
 header.home {
   @include bg-img('home-header.jpg'); //! MUST make this a string using '' due to .
-  position: relative;
-
+  
   @include media(640px) {
     &::after {
       content: '';

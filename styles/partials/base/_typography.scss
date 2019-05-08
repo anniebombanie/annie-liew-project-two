@@ -7,7 +7,8 @@ h3,
 	font-family: $font-secondary;
 }
 
-h1 {
+h1,
+h2 {
 	position: absolute;
 }
 
@@ -40,7 +41,7 @@ h1 {
 .blog h1 {
 	font-size: rem-calc(52px); //sub-pages have smaller sized headings
 	line-height: rem-calc(60px);
-	transform: translateY(rem-calc(60px));
+	bottom: 52%;
 	
 	@include media(500px) {
 		font-size: rem-calc(70px);
@@ -48,12 +49,10 @@ h1 {
 
 	@include media(700px) {
 		font-size: rem-calc(100px);
-		transform: translateY(rem-calc(75px));
 	}
 
 	@include media(1024px) {
 		font-size: rem-calc(121px);
-		transform: translateY(rem-calc(90px));
 	}
 }
 

@@ -183,6 +183,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 /* ========== GLOBAL ========== */
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -311,7 +312,8 @@ h3,
   font-family: "Walter Turncoat", cursive;
 }
 
-h1 {
+h1,
+h2 {
   position: absolute;
 }
 
@@ -354,8 +356,7 @@ h1 {
 .blog h1 {
   font-size: 2.6rem;
   line-height: 3rem;
-  -webkit-transform: translateY(3rem);
-          transform: translateY(3rem);
+  bottom: 52%;
 }
 
 @media (min-width: 500px) {
@@ -369,8 +370,6 @@ h1 {
   .contact h1,
   .blog h1 {
     font-size: 5rem;
-    -webkit-transform: translateY(3.75rem);
-            transform: translateY(3.75rem);
   }
 }
 
@@ -378,8 +377,6 @@ h1 {
   .contact h1,
   .blog h1 {
     font-size: 6.05rem;
-    -webkit-transform: translateY(4.5rem);
-            transform: translateY(4.5rem);
   }
 }
 
@@ -550,6 +547,7 @@ header.home,
 header.blog,
 header.contact {
   height: 60vh;
+  position: relative;
 }
 
 @media (min-width: 800px) {
@@ -564,7 +562,6 @@ header.home {
   content: '';
   background: url(./../assets/home-header.jpg) no-repeat center;
   background-size: cover;
-  position: relative;
 }
 
 @media (min-width: 640px) {
